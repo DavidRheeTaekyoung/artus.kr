@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>구성원 소개 - ARTUS</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <style>
+       :root {
+           --oxford-blue: #002147;
+           --goldman-sachs-gold: #B4975A;
+           --metallic-silver: #C0C0C0;
+       }
+
+       body {
+           margin: 0;
+           font-family: 'Noto Serif', serif;
+           color: var(--metallic-silver);
+           background-color: var(--oxford-blue);
+           text-align: center;
+       }
+
+       main {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 60px 20px;
+           text-align: center;
+       }
+
+       main h2 {
+           font-family: 'Inter', sans-serif;
+           font-size: 2.2rem;
+           color: var(--goldman-sachs-gold);
+           margin-bottom: 40px;
+           text-align: center;
+       }
+
+       .team-members {
+           width: 100%;
+           max-width: 1000px;
+           margin: 0 auto;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .team-members h3 {
+           font-family: 'Inter', sans-serif;
+           font-size: 1.5rem;
+           color: var(--goldman-sachs-gold);
+           margin: 40px 0 10px;
+           padding-bottom: 5px;
+           border-bottom: 2px solid var(--goldman-sachs-gold);
+           display: inline-block;
+           text-align: center;
+           width: auto;
+       }
+
+       .team-members p.title {
+           color: var(--goldman-sachs-gold);
+           font-family: 'Inter', sans-serif;
+           font-size: 1.1rem;
+           margin: 0 0 20px;
+       }
+
+       .team-members p.description {
+           color: var(--metallic-silver);
+           font-family: 'Noto Serif', serif;
+           font-size: 1rem;
+           line-height: 1.8;
+           margin: 0 0 40px;
+           text-align: center;
+           width: 100%;
+           max-width: 800px;
+           word-break: keep-all;
+       }
+
+       @media screen and (max-width: 768px) {
+           main {
+               padding: 40px 15px;
+           }
+
+           main h2 {
+               font-size: 1.8rem;
+           }
+
+           .team-members h3 {
+               font-size: 1.3rem;
+           }
+
+           .team-members p.title {
+               font-size: 1rem;
+           }
+
+           .team-members p.description {
+               font-size: 0.9rem;
+               padding: 0 15px;
+               line-height: 1.6;
+           }
+       }
+   </style>
+</head>
+<body>
+   <div id="header"></div>
+
+   <main>
+       <h2>구성원 소개</h2>
+       <div class="team-members">
+           <h3>소병운</h3>
+           <p class="title">부회장, 파트너, 투자심의위원</p>
+           <p class="description">소병운 부회장은 현대증권과 하나금융투자에서 투자금융그룹장, 전무이사 등을 역임했습니다. 다양한 인수합병(M&A) 거래와 다수의 사모펀드 출범에 핵심적인 역할을 수행했습니다. 서울대학교 경제학과를 졸업하고 미국 보스턴의 아서디리틀에서 연수했습니다. 또한 앤아버에 위치한 미시간대학교에서 MBA 학위를 취득했습니다.</p>
+
+           <h3>한현철</h3>
+           <p class="title">대표이사, 파트너, 투자심의위원</p>
+           <p class="description">한현철 대표는 20여 년간 여러 증권사에 재직하며 한국 금융투자업계의 대표적 프라이빗캥커로 명성을 떨쳤습니다. 미래에셋증권(구 대우증권) 재직 시 최연소 지점장에 올랐으며, 이후 NH투자증권 프리미어블루 대치센터장과 메리츠증권 도곡금융센터장을 역임했습니다. 다올투자증권 리테일금융센터 PIB전무로 일하였습니다.</p>
+
+           <h3>이태경</h3>
+           <p class="title">대표이사, 파트너, 투자심의위원</p>
+           <p class="description">마이다스에셋자산운용에서 PEF 부문을 이끌었고, 현대증권에서 금융 및 스몰캡 애널리스트로 근무했습니다. 또한 키움증권에서 보험 산업 애널리스트로 근무했습니다. 국내 인사 컨설팅 회사에서 컨설턴트로도 활동한 바 있습니다. 서울대학교 경영학과를 졸업했습니다.</p>
+
+           <h3>정상훈</h3>
+           <p class="title">글로벌대표, 파트너</p>
+           <p class="description">정상훈 대표는 변호사로 한국과 중국 변호사 자격을 모두 보유하고 있습니다. 현재 법무법인 율촌의 중국대표를 겸임하고 있습니다. 한샘의 중국 대표를 역임했습니다. 중국 로펌인 링크와 킹앤우드에서 근무했습니다. 미래에셋캐피탈 투자본부와 국내 로펌인 법무법인 서정에서 근무했습니다. 서울대학교 법대를 졸업하였습니다.</p>
+       </div>
+   </main>
+
+   <div id="footer"></div>
+
+   <script>
+       $(document).ready(function() {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+</body>
+</html> 

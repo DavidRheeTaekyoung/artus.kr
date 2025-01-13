@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>핵심 가치 - ARTUS</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <style>
+       :root {
+           --oxford-blue: #002147;
+           --goldman-sachs-gold: #B4975A;
+           --metallic-silver: #C0C0C0;
+       }
+
+       body {
+           margin: 0;
+           font-family: 'Noto Serif', serif;
+           color: var(--metallic-silver);
+           background-color: var(--oxford-blue);
+           text-align: center;
+       }
+
+       main {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 60px 20px;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       main h2 {
+           font-family: 'Inter', sans-serif;
+           font-size: 2.2rem;
+           color: var(--goldman-sachs-gold);
+           margin-bottom: 40px;
+           text-align: center;
+           width: 100%;
+       }
+
+       .values {
+           width: 100%;
+           max-width: 1000px;
+           margin: 0 auto;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .values .value {
+           width: 100%;
+           max-width: 800px;
+           margin: 40px auto;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .values h3 {
+           font-family: 'Inter', sans-serif;
+           font-size: 1.5rem;
+           color: var(--goldman-sachs-gold);
+           margin: 40px 0 10px;
+           padding-bottom: 5px;
+           border-bottom: 2px solid var(--goldman-sachs-gold);
+           display: inline-block;
+           text-align: center;
+           width: auto;
+       }
+
+       .values ul {
+           list-style: none;
+           padding: 0;
+           margin: 20px 0;
+           width: 100%;
+           text-align: center;
+       }
+
+       .values li {
+           color: var(--metallic-silver);
+           font-family: 'Noto Serif', serif;
+           font-size: 1rem;
+           line-height: 1.8;
+           margin: 15px auto;
+           text-align: center;
+           max-width: 800px;
+           padding: 0 20px;
+           word-break: keep-all;
+       }
+
+       @media screen and (max-width: 768px) {
+           main h2 {
+               font-size: 1.8rem;
+           }
+
+           .values h3 {
+               font-size: 1.3rem;
+           }
+
+           .values li {
+               font-size: 0.9rem;
+               padding: 0 15px;
+               line-height: 1.6;
+           }
+       }
+   </style>
+</head>
+<body>
+   <div id="header"></div>
+
+   <main>
+       <h2>Core Values</h2>
+       <div class="values">
+           <div class="value">
+               <h3>Accountability - 책임</h3>
+               <ul>
+                   <li>고객 자산에 대한 책임감과 수탁자 의무를 다합니다.</li>
+                   <li>모든 투자 결정과 프로세스에 명확한 책임소재를 둡니다.</li>
+               </ul>
+           </div>
+
+           <div class="value">
+               <h3>Righteousness - 정직</h3>
+               <ul>
+                   <li>투명하고 정직한 운용 원칙을 지킵니다.</li>
+                   <li>윤리적이고 올바른 자산운용을 실천합니다.</li>
+               </ul>
+           </div>
+
+           <div class="value">
+               <h3>Trust - 신뢰</h3>
+               <ul>
+                   <li>정직하고 투명한 운용으로 신뢰관계를 구축합니다.</li>
+                   <li>안정적이고 지속가능한 성과로 신뢰를 입증합니다.</li>
+               </ul>
+           </div>
+
+           <div class="value">
+               <h3>Understanding - 이해</h3>
+               <ul>
+                   <li>고객의 투자 목표와 니즈를 깊이 이해합니다.</li>
+                   <li>시장 상황과 리스크 요인을 정확히 파악합니다.</li>
+               </ul>
+           </div>
+
+           <div class="value">
+               <h3>Specialty - 전문성</h3>
+               <ul>
+                   <li>차별화된 투자 전략과 운용 역량을 보유합니다.</li>
+                   <li>지속적인 연구와 혁신으로 전문성을 강화합니다.</li>
+               </ul>
+           </div>
+       </div>
+   </main>
+
+   <div id="footer"></div>
+
+   <script>
+       $(document).ready(function() {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+</body>
+</html> 

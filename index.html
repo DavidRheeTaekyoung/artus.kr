@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="ARTUS - 책임과 정직을 기반으로 하는 프라이빗 에쿼티 파트너">
+   <meta name="theme-color" content="#002147">
+   <title>ARTUS - 메인</title>
+   <script src="include.js"></script>
+   <link rel="preconnect" href="https://code.jquery.com">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+   <style>
+       :root {
+           --color-primary: #002147;
+           --color-accent: #B4975A;
+           --color-text: #C0C0C0;
+           --font-heading: 'Inter', sans-serif;
+           --font-body: 'Noto Serif', serif;
+           --max-width: 1200px;
+           --spacing-base: 20px;
+       }
+
+       body {
+           margin: 0;
+           font-family: var(--font-body);
+           color: var(--color-text);
+           background-color: var(--color-primary);
+           text-align: center;
+       }
+
+       header {
+           background-color: var(--color-primary);
+           padding: 40px 0;
+           text-align: center;
+       }
+
+       header img {
+           width: 200px;
+           height: auto;
+           margin-bottom: 7px;
+       }
+
+       header h2 {
+           color: var(--color-text);
+           font-family: var(--font-heading);
+           font-size: 0.9rem;
+           margin: 10px 0;
+       }
+
+       header p {
+           color: var(--color-accent);
+           font-family: var(--font-body);
+           font-size: 1rem;
+           margin: 0;
+       }
+
+       header hr {
+           border: none;
+           height: 1px;
+           background-color: var(--color-accent);
+           margin: 20px auto;
+           width: 80%;
+       }
+
+       nav {
+           display: flex;
+           justify-content: center;
+           background-color: var(--color-accent);
+           padding: 15px 0;
+           text-align: center;
+       }
+
+       nav a {
+           color: var(--color-primary);
+           text-decoration: none;
+           margin: 0 30px;
+           font-size: 1rem;
+           font-family: var(--font-heading);
+       }
+
+       main {
+           max-width: var(--max-width);
+           margin-inline: auto;
+           padding-block: calc(var(--spacing-base) * 3);
+           padding-inline: var(--spacing-base);
+           display: grid;
+           gap: var(--spacing-base);
+       }
+
+       main h2 {
+           font-family: var(--font-heading);
+           font-size: 2.2rem;
+           color: var(--color-accent);
+           margin-bottom: 40px;
+           text-align: center;
+       }
+
+       main p {
+           color: var(--color-text);
+           font-family: var(--font-body);
+           font-size: 1rem;
+           line-height: 2;
+           margin-bottom: 40px;
+           text-align: center;
+           max-width: 1000px;
+           margin-left: auto;
+           margin-right: auto;
+       }
+
+       main p:first-of-type {
+           font-size: 1rem;
+           color: var(--color-text);
+           font-style: italic;
+           margin-bottom: 40px;
+       }
+
+       main strong {
+           color: var(--color-accent);
+       }
+
+       footer {
+           background-color: var(--color-accent);
+           color: var(--color-primary);
+           padding: 20px 0;
+           font-family: var(--font-body);
+           text-align: center;
+       }
+
+       .contact-info {
+           font-size: 1rem;
+           line-height: 1.5;
+           margin-bottom: 20px;
+       }
+
+       .contact-info p {
+           margin: 5px 0;
+           text-align: center;
+       }
+
+       footer a {
+           color: var(--color-primary);
+           text-decoration: none;
+       }
+
+       footer a:hover {
+           text-decoration: underline;
+       }
+
+       /* 모바일 환경을 위한 미디어 쿼리 */
+       @media screen and (max-width: 768px) {
+           :root {
+               --spacing-base: 15px;
+           }
+
+           header img {
+               width: 150px;
+           }
+
+           nav {
+               flex-direction: column;
+               padding: 0;
+           }
+
+           nav a {
+               padding: 10px 0;
+               margin: 0;
+               border-bottom: 1px solid rgba(0,33,71,0.1);
+           }
+
+           main {
+               padding: 40px 15px;
+           }
+
+           main h2 {
+               font-size: 1.8rem;
+           }
+
+           main p {
+               font-size: 0.9rem;
+               line-height: 1.8;
+               padding: 0 10px;
+               word-break: keep-all;
+           }
+
+           /* br 태그 제거하고 자동 줄바꿈 적용 */
+           main p br {
+               display: none;
+           }
+
+           .contact-info p {
+               font-size: 0.9rem;
+               word-break: keep-all;
+           }
+       }
+   </style>
+</head>
+<body>
+   <header id="header"></header>
+   <main>
+       <h1>Welcome</h1>
+       <p>"ARTUS는 책임과 정직을 기반으로, 신뢰와 깊은 이해를 바탕으로 한 전문성을 추구하며,<br>
+       고객 자산의 안정적 성장을 위해 끊임없이 혁신하는 자산운용 파트너입니다."</p>
+
+       <p>ARTUS는 고객 자산의 안정적인 성장을 추구하는 프라이빗 에쿼티 파트너입니다.<br>
+       우리의 이름에 담긴 각 글자는 회사의 핵심 가치를 상징합니다</p>
+
+       <p><strong>Accountability</strong>(책임)과 <strong>Righteousness</strong>(정직)을 기반으로,<br>
+       <strong>Trust</strong>(신뢰)와 <strong>Understanding</strong>(이해)를 바탕으로 한 <strong>Specialty</strong>(전문성)을 추구합니다.</p>
+
+       <p>ARTUS는 단순한 회사명이 아닌, 고객과 함께 성장하는 진정한 자산운용 파트너로서<br>
+       책임감, 정직성, 신뢰성, 고객 이해, 그리고 전문성이라는 다섯 가지 핵심 가치를 실천하며,<br>
+       이를 통해 고객 자산의 안정적인 성장을 실현하는 것을 궁극적인 목표로 합니다.</p>
+   </main>
+
+   <footer id="footer"></footer>
+</body>
+</html>

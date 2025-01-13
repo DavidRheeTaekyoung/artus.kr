@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>투자 철학 - ARTUS</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <style>
+       :root {
+           --oxford-blue: #002147;
+           --goldman-sachs-gold: #B4975A;
+           --metallic-silver: #C0C0C0;
+       }
+
+       body {
+           margin: 0;
+           font-family: 'Noto Serif', serif;
+           color: var(--metallic-silver);
+           background-color: var(--oxford-blue);
+           text-align: center;
+       }
+
+       main {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 60px 20px;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       main h2 {
+           font-family: 'Inter', sans-serif;
+           font-size: 2.2rem;
+           color: var(--goldman-sachs-gold);
+           margin-bottom: 40px;
+           text-align: center;
+           width: 100%;
+       }
+
+       .philosophy {
+           width: 100%;
+           max-width: 1000px;
+           margin: 0 auto;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .philosophy p {
+           color: var(--metallic-silver);
+           font-family: 'Noto Serif', serif;
+           font-size: 1rem;
+           line-height: 1.8;
+           margin: 0 auto 30px;
+           text-align: center;
+           max-width: 800px;
+           padding: 0 20px;
+           word-break: keep-all;
+       }
+
+       .philosophy p:last-child {
+           margin-bottom: 0;
+       }
+
+       .philosophy strong {
+           color: var(--goldman-sachs-gold);
+           font-weight: normal;
+       }
+
+       @media screen and (max-width: 768px) {
+           main {
+               padding: 40px 15px;
+           }
+
+           main h2 {
+               font-size: 1.8rem;
+           }
+
+           .philosophy p {
+               font-size: 0.9rem;
+               padding: 0 15px;
+               line-height: 1.6;
+               margin-bottom: 25px;
+           }
+       }
+   </style>
+</head>
+<body>
+   <div id="header"></div>
+
+   <main>
+       <h2>투자 철학</h2>
+       <div class="philosophy">
+           <p>우리는 자본 활동에 의한 지속가능한 공동 가치를 창출하고자 합니다. 우리의 주요사업은 자본을 효율적으로 배치하는 것이며, 기업을 중심으로 이 일을 구상하고, 구현합니다.</p>
+
+           <p>기업을 이루고 있는 세 주체는 고객, 임직원, 주주이며 각각은 경제적 이기심을 기본적으로 가지고 있습니다. 자신들을 제외한 나머지의 이익을 제한하고 자신들의 이익을 극대화 하려는 본능을 가지고 있는 것입니다. 주주에 의한 임직원 정리해고, 회사가 고객을 교묘히 활용하는 것, 고객이 임직원에게 부당한 요구를 하는 것 등이 실제 사례들입니다. 쉽게 구현할 수 있지만 지속 가능하지 않은 경우가 많아 큰 가치가 만들어지지 않습니다.</p>
+
+           <p>우리는 이 세 주체들이 동시에 이익과 가치가 늘어나는 방법은 항상 연구합니다. 가치 있는 일이며, 동작하기만 하면 크고 좋은 이익이 창출될 것이라 믿기 때문입니다. 가장 유효한 수단은 회사의 지배구조를 컨트롤하는 것이며, 잘 알려진 방법은 바이아웃 펀드를 운영하는 것입니다. 그래서 바이아웃 PEF가 우리들의 "업"이 된 것입니다.</p>
+
+           <p>특히, 임직원 부문의 일자리에 주목합니다. 우리는 <strong>"중급일자리"</strong>를 통해 누구나 중위소득의 평생직장을 가질 수 있도록 노력하고, <strong>second chance</strong>를 보장하는 역할을 하려고 합니다. 사회적으로 부여받은 우리의 사명으로 생각하고 있습니다.</p>
+
+           <p>저희를 믿고 투자자금을 맡겨 주신 투자자와 주주들께 다른 이의 희생에 기반하지 않은, 정당하고 가치 있는 수익을 창출하는 것이 우리의 목표입니다. 이렇게 구현되는 휴머니즘을 <strong>"자본에 의한 휴머니즘"</strong>이라 명명하고, 우리의 철학이자 사업의 근간으로 삼았습니다. 스트라이커 임직원은 이 일을 하기 위해 모여서 노력하고 있습니다.</p>
+       </div>
+   </main>
+
+   <div id="footer"></div>
+
+   <script>
+       $(document).ready(function() {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+</body>
+</html> 

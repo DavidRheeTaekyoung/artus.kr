@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       :root {
+           --oxford-blue: #002147;
+           --goldman-sachs-gold: #B4975A;
+           --metallic-silver: #C0C0C0;
+       }
+
+       body {
+           margin: 0;
+           font-family: 'Noto Serif', serif;
+           color: var(--metallic-silver);
+           background-color: var(--oxford-blue);
+           text-align: center;
+       }
+
+       header {
+           background-color: var(--oxford-blue);
+           padding: 40px 0 20px;
+           text-align: center;
+       }
+
+       header img {
+           width: 450px;
+           height: auto;
+           margin-bottom: 10px;
+       }
+
+       header h2 {
+           color: var(--metallic-silver);
+           font-family: 'Inter', sans-serif;
+           font-size: 1.5rem;
+           margin: 10px 0;
+       }
+
+       header p {
+           color: var(--goldman-sachs-gold);
+           font-family: 'Noto Serif', serif;
+           font-size: 1.5rem;
+           margin: 0;
+       }
+
+       header hr {
+           border: none;
+           height: 1px;
+           background-color: var(--goldman-sachs-gold);
+           margin: 15px auto 1.5px;
+           width: 80%;
+       }
+
+       nav {
+           background-color: var(--goldman-sachs-gold);
+           padding: 12px 0;
+           margin-top: 1.5px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+       }
+
+       nav a {
+           color: var(--oxford-blue);
+           text-decoration: none;
+           margin: 0 20px;
+           font-size: 1rem;
+           font-family: 'Inter', sans-serif;
+       }
+
+       @media screen and (max-width: 768px) {
+           header img {
+               width: 225px;
+           }
+
+           header h2 {
+               font-size: 1.5rem;
+           }
+
+           header p {
+               font-size: 1.35rem;
+           }
+
+           nav {
+               flex-direction: column;
+               padding: 0;
+           }
+
+           nav a {
+               padding: 10px 0;
+               margin: 0;
+               border-bottom: 1px solid rgba(0,33,71,0.1);
+           }
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <img src="./images/logo.svg" alt="ARTUS">
+       <h2>Private Equity Partners</h2>
+       <p>주식회사 아르투스</p>
+       <hr>
+   </header>
+
+   <nav>
+       <a href="index.html">홈</a>
+       <a href="philosophy.html">투자 철학</a>
+       <a href="values.html">핵심 가치</a>
+       <a href="team.html">구성원 소개</a>
+       <a href="services.html">업무 분야</a>
+       <a href="achievements.html">주요 성과</a>
+       
+       
+       
+   </nav>
+</body>
+</html>
