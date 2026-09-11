@@ -1,217 +1,248 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="ARTUS - 책임과 정직을 기반으로 하는 프라이빗 에쿼티 파트너">
-   <meta name="theme-color" content="#002147">
-   <title>ARTUS - 메인</title>
-   <script src="include.js"></script>
-   <link rel="preconnect" href="https://code.jquery.com">
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
-   <style>
-       :root {
-           --color-primary: #002147;
-           --color-accent: #B4975A;
-           --color-text: #C0C0C0;
-           --font-heading: 'Inter', sans-serif;
-           --font-body: 'Noto Serif', serif;
-           --max-width: 1200px;
-           --spacing-base: 20px;
-       }
-
-       body {
-           margin: 0;
-           font-family: var(--font-body);
-           color: var(--color-text);
-           background-color: var(--color-primary);
-           text-align: center;
-       }
-
-       header {
-           background-color: var(--color-primary);
-           padding: 40px 0;
-           text-align: center;
-       }
-
-       header img {
-           width: 200px;
-           height: auto;
-           margin-bottom: 7px;
-       }
-
-       header h2 {
-           color: var(--color-text);
-           font-family: var(--font-heading);
-           font-size: 0.9rem;
-           margin: 10px 0;
-       }
-
-       header p {
-           color: var(--color-accent);
-           font-family: var(--font-body);
-           font-size: 1rem;
-           margin: 0;
-       }
-
-       header hr {
-           border: none;
-           height: 1px;
-           background-color: var(--color-accent);
-           margin: 20px auto;
-           width: 80%;
-       }
-
-       nav {
-           display: flex;
-           justify-content: center;
-           background-color: var(--color-accent);
-           padding: 15px 0;
-           text-align: center;
-       }
-
-       nav a {
-           color: var(--color-primary);
-           text-decoration: none;
-           margin: 0 30px;
-           font-size: 1rem;
-           font-family: var(--font-heading);
-       }
-
-       main {
-           max-width: var(--max-width);
-           margin-inline: auto;
-           padding-block: calc(var(--spacing-base) * 3);
-           padding-inline: var(--spacing-base);
-           display: grid;
-           gap: var(--spacing-base);
-       }
-
-       main h2 {
-           font-family: var(--font-heading);
-           font-size: 2.2rem;
-           color: var(--color-accent);
-           margin-bottom: 40px;
-           text-align: center;
-       }
-
-       main p {
-           color: var(--color-text);
-           font-family: var(--font-body);
-           font-size: 1rem;
-           line-height: 2;
-           margin-bottom: 40px;
-           text-align: center;
-           max-width: 1000px;
-           margin-left: auto;
-           margin-right: auto;
-       }
-
-       main p:first-of-type {
-           font-size: 1rem;
-           color: var(--color-text);
-           font-style: italic;
-           margin-bottom: 40px;
-       }
-
-       main strong {
-           color: var(--color-accent);
-       }
-
-       footer {
-           background-color: var(--color-accent);
-           color: var(--color-primary);
-           padding: 20px 0;
-           font-family: var(--font-body);
-           text-align: center;
-       }
-
-       .contact-info {
-           font-size: 1rem;
-           line-height: 1.5;
-           margin-bottom: 20px;
-       }
-
-       .contact-info p {
-           margin: 5px 0;
-           text-align: center;
-       }
-
-       footer a {
-           color: var(--color-primary);
-           text-decoration: none;
-       }
-
-       footer a:hover {
-           text-decoration: underline;
-       }
-
-       /* 모바일 환경을 위한 미디어 쿼리 */
-       @media screen and (max-width: 768px) {
-           :root {
-               --spacing-base: 15px;
-           }
-
-           header img {
-               width: 150px;
-           }
-
-           nav {
-               flex-direction: column;
-               padding: 0;
-           }
-
-           nav a {
-               padding: 10px 0;
-               margin: 0;
-               border-bottom: 1px solid rgba(0,33,71,0.1);
-           }
-
-           main {
-               padding: 40px 15px;
-           }
-
-           main h2 {
-               font-size: 1.8rem;
-           }
-
-           main p {
-               font-size: 0.9rem;
-               line-height: 1.8;
-               padding: 0 10px;
-               word-break: keep-all;
-           }
-
-           /* br 태그 제거하고 자동 줄바꿈 적용 */
-           main p br {
-               display: none;
-           }
-
-           .contact-info p {
-               font-size: 0.9rem;
-               word-break: keep-all;
-           }
-       }
-   </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARTUS — 자본에 의한 휴머니즘 · Private Equity Partners</title>
+<meta name="description" content="ARTUS(주식회사 아르투스)는 책임·정직·신뢰·이해·전문성을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다. 기업인수합병, 지분투자, 신디케이션, 상속·증여 설계.">
+<meta name="theme-color" content="#0B1E3A">
+<link rel="canonical" href="https://artus.kr/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARTUS">
+<meta property="og:title" content="ARTUS — 자본에 의한 휴머니즘 · Private Equity Partners">
+<meta property="og:description" content="ARTUS(주식회사 아르투스)는 책임·정직·신뢰·이해·전문성을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다. 기업인수합병, 지분투자, 신디케이션, 상속·증여 설계.">
+<meta property="og:url" content="https://artus.kr/index.html">
+<meta property="og:image" content="https://artus.kr/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/site-extra.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"ARTUS (주식회사 아르투스)","url":"https://artus.kr","email":"contact@artus.kr","telephone":"+82-2-761-2025","faxNumber":"+82-2-761-2035","address":{"@type":"PostalAddress","streetAddress":"여의나루로 53-1 대오빌딩 14층","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"},"description":"ARTUS(주식회사 아르투스)는 책임·정직·신뢰·이해·전문성을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다. 기업인수합병, 지분투자, 신디케이션, 상속·증여 설계."}</script>
 </head>
 <body>
-   <header id="header"></header>
-   <main>
-       <h1>Welcome</h1>
-       <p>"ARTUS는 책임과 정직을 기반으로, 신뢰와 깊은 이해를 바탕으로 한 전문성을 추구하며,<br>
-       고객 자산의 안정적 성장을 위해 끊임없이 혁신하는 자산운용 파트너입니다."</p>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav" role="banner">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="ARTUS 홈">
+      <span class="mark">ART<b>US</b></span>
+      <span class="sub">Private Equity Partners</span>
+    </a>
+    <button class="burger" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="주 메뉴">
+      <a href="index.html">홈</a>
+      <a href="philosophy.html">투자 철학</a>
+      <a href="services.html">업무 분야</a>
+      <a href="ax.html">AX 컨설팅</a>
+      <a href="decisionmaker.html">디시전메이커</a>
+      <a href="achievements.html">주요 성과</a>
+      <a href="insights.html">인사이트</a>
+      <a href="team.html">구성원</a>
+      <a class="cta" href="contact.html">문의하기</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
 
-       <p>ARTUS는 고객 자산의 안정적인 성장을 추구하는 프라이빗 에쿼티 파트너입니다.<br>
-       우리의 이름에 담긴 각 글자는 회사의 핵심 가치를 상징합니다</p>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow rv">Private Equity Partners · Seoul</div>
+    <h1 class="h-xl rv d1">자본에 의한<br>휴머니즘</h1>
+    <p class="lead rv d2">고객, 임직원, 주주가 동시에 이익과 가치를 얻는 길을 연구합니다. 다른 이의 희생에 기대지 않는, 정당하고 가치 있는 수익. 그것이 아르투스가 바이아웃을 업으로 삼은 이유입니다.</p>
+    <div class="actions rv d3">
+      <a class="btn solid" href="philosophy.html">투자 철학 <span class="arr">→</span></a>
+      <a class="btn" href="achievements.html">주요 성과</a>
+    </div>
+  </div>
+  <svg class="orn" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+  <circle cx="260" cy="260" r="258" stroke="rgba(180,151,90,.25)"/>
+  <circle cx="260" cy="260" r="200" stroke="rgba(180,151,90,.18)"/>
+  <circle cx="260" cy="260" r="140" stroke="rgba(180,151,90,.14)"/>
+  <path d="M260 2v516M2 260h516" stroke="rgba(180,151,90,.14)"/>
+  <path d="M78 78l364 364M442 78L78 442" stroke="rgba(180,151,90,.1)"/>
+  <circle cx="260" cy="60" r="4" fill="#B4975A"/>
+  <circle cx="460" cy="260" r="3" fill="#B4975A" opacity=".7"/>
+  <circle cx="120" cy="400" r="2.5" fill="#B4975A" opacity=".6"/>
+</svg>
+  <div class="since">Private Equity &amp; AI Transformation · Yeouido</div>
+  <div class="scroll-cue"><i></i>Scroll</div>
+</section>
 
-       <p><strong>Accountability</strong>(책임)과 <strong>Righteousness</strong>(정직)을 기반으로,<br>
-       <strong>Trust</strong>(신뢰)와 <strong>Understanding</strong>(이해)를 바탕으로 한 <strong>Specialty</strong>(전문성)을 추구합니다.</p>
+<section class="acro">
+  <div class="wrap">
+    <div class="cell rv"><span class="l">A</span><span class="w">Accountability</span><span class="k">책임 · 수탁자 의무</span></div>
+    <div class="cell rv d1"><span class="l">R</span><span class="w">Righteousness</span><span class="k">정직 · 투명한 운용</span></div>
+    <div class="cell rv d2"><span class="l">T</span><span class="w">Trust</span><span class="k">신뢰 · 성과로 입증</span></div>
+    <div class="cell rv d3"><span class="l">U</span><span class="w">Understanding</span><span class="k">이해 · 고객과 시장</span></div>
+    <div class="cell rv d4"><span class="l">S</span><span class="w">Specialty</span><span class="k">전문성 · 차별화된 전략</span></div>
+  </div>
+</section>
 
-       <p>ARTUS는 단순한 회사명이 아닌, 고객과 함께 성장하는 진정한 자산운용 파트너로서<br>
-       책임감, 정직성, 신뢰성, 고객 이해, 그리고 전문성이라는 다섯 가지 핵심 가치를 실천하며,<br>
-       이를 통해 고객 자산의 안정적인 성장을 실현하는 것을 궁극적인 목표로 합니다.</p>
-   </main>
+<section class="section on-ivory">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="eyebrow rv">01 — Who we are</div>
+        <h2 class="h-l rv d1">이름에 담은<br>다섯 가지 약속</h2>
+      </div>
+      <div class="prose">
+        <p class="rv">ARTUS는 고객 자산의 안정적인 성장을 추구하는 프라이빗 에쿼티 파트너입니다. 우리의 이름에 담긴 각 글자는 회사의 핵심 가치를 상징합니다.</p>
+        <p class="rv d1"><strong>Accountability</strong>(책임)과 <strong>Righteousness</strong>(정직)을 기반으로, <strong>Trust</strong>(신뢰)와 <strong>Understanding</strong>(이해)를 바탕으로 한 <strong>Specialty</strong>(전문성)을 추구합니다.</p>
+        <p class="rv d2">ARTUS는 단순한 회사명이 아닌, 고객과 함께 성장하는 진정한 자산운용 파트너로서 다섯 가지 핵심 가치를 실천하며, 이를 통해 고객 자산의 안정적인 성장을 실현하는 것을 궁극적인 목표로 합니다.</p>
+        <a class="btn rv d3" href="values.html" style="margin-top:10px">핵심 가치 자세히 <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-   <footer id="footer"></footer>
+<section class="section tight on-paper">
+  <div class="wrap">
+    <div class="eyebrow rv">02 — Track record</div>
+    <div class="stats rv d1">
+      <div class="stat"><div class="n"><span data-count="59">0</span><small>%</small></div><div class="t">최고 연환산 수익률</div><div class="s">만나코퍼레이션 · 스트라이커 스카이 제1호</div></div>
+      <div class="stat"><div class="n"><span data-count="2.52" data-dec="2">0</span><small>x</small></div><div class="t">최고 투자 배수</div><div class="s">원금 대비 회수 배수</div></div>
+      <div class="stat"><div class="n"><span data-count="4">0</span><small>건</small></div><div class="t">운용 완료 펀드</div><div class="s">모르가르텐 · 파밍 · 아레나 · 스카이</div></div>
+      <div class="stat"><div class="n"><span data-count="0">0</span><small>건</small></div><div class="t">원금 손실</div><div class="s">풋옵션 등 구조적 위험관리</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="sticky">
+        <div class="eyebrow rv">03 — What we do</div>
+        <h2 class="h-l rv d1">자본을 효율적으로<br>배치하는 네 가지 방식</h2>
+        <p class="lead rv d2" style="margin-top:20px">기업을 중심으로 구상하고, 기업을 중심으로 구현합니다.</p>
+        <a class="btn rv d3" href="services.html" style="margin-top:8px">업무 분야 전체 보기 <span class="arr">→</span></a>
+      </div>
+      <div class="grid grid-2">
+        <a class="card rv" href="services.html#ma"><div class="num">01</div><h3>기업인수합병 (M&amp;A)</h3><p>가치 분석과 적정 인수가격 산정, 실사, 거래구조 설계와 협상, 인수 후 통합(PMI)까지 한 팀이 끝까지 맡습니다.</p><span class="more">자세히 →</span></a>
+        <a class="card rv d1" href="services.html#equity"><div class="num">02</div><h3>지분투자</h3><p>성장 잠재력 있는 기업을 발굴해 지분을 인수하고, 이사회 참여와 재무구조 개선으로 기업가치를 높인 뒤 회수합니다.</p><span class="more">자세히 →</span></a>
+        <a class="card rv d2" href="services.html#syndication"><div class="num">03</div><h3>신디케이션</h3><p>인프라·부동산·인수금융 등 대규모 자금을 복수 금융기관과 함께 조달하고, 주간사로서 조건을 설계하고 대주단을 운영합니다.</p><span class="more">자세히 →</span></a>
+        <a class="card rv d3" href="services.html#succession"><div class="num">04</div><h3>상속·증여 설계</h3><p>기업 오너 지분의 승계 방안을 세무·법률 전문가와 함께 설계하고, 가업승계와 지배구조 개선, 납부 자금까지 계획합니다.</p><span class="more">자세히 →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-ivory">
+  <div class="wrap">
+    <div class="eyebrow rv">04 — Selected investments</div>
+    <div class="split" style="align-items:end;margin-bottom:40px">
+      <h2 class="h-l rv d1">숫자로 남은 원칙</h2>
+      <p class="lead rv d2">시작이 좋았던 딜도, 팬데믹을 만난 딜도 있었습니다. 어느 경우든 투자자에게 약속한 것을 지켰습니다.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="deal rv"><div><div class="fund">스트라이커 스카이 제1호</div><h3>만나코퍼레이션</h3><p>배달 대행 상위 5개사 중 성장률과 CEO 전문성이 가장 높은 기업. 2년 만에 5위에서 2위로 올라섰고, 전략적 투자자에게 회수했습니다.</p></div><div class="kpi"><div class="n">59<small>%</small></div><div class="x">2.52x</div><div class="lbl">IRR · MOIC</div></div></div>
+      <div class="deal rv d1"><div><div class="fund">스트라이커 파밍 제1호</div><h3>에이치앤비아시아</h3><p>창업자이자 2대 주주의 MBO를 구현한 구조화 딜. 사과 '엔비'의 아시아 독점 판권을 가진 과일 유통사에서 안정적인 현금흐름을 확인했습니다.</p></div><div class="kpi"><div class="n">39<small>%</small></div><div class="x">2.32x</div><div class="lbl">IRR · MOIC</div></div></div>
+      <div class="deal rv d2"><div><div class="fund">스트라이커 모르가르텐 제1호</div><h3>마제스티 골프 코리아</h3><p>하이엔드 골프 장비 제조사. 당사가 해외 기업을 인수한 첫 사례로, 스마트스코어·SGPE와 컨소시엄을 구성했습니다.</p></div><div class="kpi"><div class="n">9<small>%</small></div><div class="x">1.09x</div><div class="lbl">IRR · MOIC</div></div></div>
+      <div class="deal rv d3"><div><div class="fund">스트라이커 아레나 제1호</div><h3>아프리카 오픈스튜디오</h3><p>스트리밍 기업의 PC방 진출에 FI로 참여. 팬데믹으로 시장이 닫혔지만 풋옵션으로 손실 없이 마무리한 위험관리 사례입니다.</p></div><div class="kpi"><div class="n">0</div><div class="x">손실 없음</div><div class="lbl">Downside protected</div></div></div>
+    </div>
+    <div style="margin-top:36px" class="rv"><a class="btn" href="achievements.html">주요 성과 전체 보기 <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<section class="section on-ink">
+  <div class="wrap">
+    <div class="split">
+      <div class="sticky">
+        <div class="chapter">AX</div>
+        <div class="eyebrow rv">05 — AI Transformation</div>
+        <h2 class="h-l rv d1">회사 전체를<br>수시간 안에 AX합니다</h2>
+        <p class="lead rv d2" style="margin-top:20px">코딩을 모르는 구성원 전원이 자기 말로 회사의 프로그램을 짓고 고치게 됩니다. 우리는 이 방식으로 운용업을 먼저 바꿨습니다.</p>
+        <div class="rv d3" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px"><a class="btn solid" href="ax.html">AX 컨설팅 <span class="arr">→</span></a><a class="btn" href="decisionmaker.html">디시전메이커</a></div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card rv"><div class="num">태버내클</div><h3>그림이 먼저, 검사를 못 넘으면 산출물이 아니다</h3><p>헌법 12조, 방 여덟, 사람이 들어오는 문 셋. 직원이 채팅방에서 이름을 부르면 30초 안에 개발이 시작되고, 새벽에는 감사 에이전트가 어제 만든 것을 사용자 관점으로 다시 써 봅니다.</p></div>
+        <div class="card rv d1"><div class="num">디시전메이커</div><h3>운용업 자체를 AX했다</h3><p>접수·분류·심사·로드맵·투심위·서명. 20년의 투자 기준을 실측 가능한 규범으로 옮기고, 대표 한 사람이 여러 딜을 놓치지 않게 만든 한 회사·한 화면.</p></div>
+        <div class="card rv d2"><div class="num">Engagements</div><h3>122개 지점 프랜차이즈 · 3개국 공장 · 미디어 딜룸</h3><p>세차 프랜차이즈 통합 플랫폼, 제조기업 생산 통합 관제, 텔레그램 릴레이 구축, 투자 유치 딜룸까지. 첫날의 산출물은 코드가 아니라 질문 목록입니다.</p></div>
+        <div class="card rv d3"><div class="num">Principle</div><h3>준비는 기계가, 판단과 도장은 사람이</h3><p>기계 산출은 제안·할 일·[결정 필요]로만 사람에게 갑니다. 밖으로 나가는 것은 사람이 승인하고, 원본과 실명은 사무실 PC를 떠나지 않습니다.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-ivory">
+  <div class="wrap">
+    <div class="split" style="align-items:end;margin-bottom:40px">
+      <div><div class="eyebrow rv">06 — Insights</div><h2 class="h-l rv d1">우리가 보는 네 개의 산업</h2></div>
+      <p class="lead rv d2">에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽습니다.</p>
+    </div>
+    <div class="insight-grid">
+      <a class="icard rv" href="insight-energy.html"><div class="num">01</div><div class="t">Energy</div><h3>전기를 구하는 쪽이 협상력을 잃는 시대</h3><p>데이터센터 전력수요 460→1,000 TWh. 발전원보다 계통·저장·수요지 인접성이 프리미엄을 받는다.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv d1" href="insight-space.html"><div class="num">02</div><div class="t">Space</div><h3>기술 자립에서 시장 자립으로</h3><p>우주청 예산 1조 1,201억, 뉴스페이스 펀드 81억→2,000억. 민간의 첫 계약이 어디서 나오는가.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv d2" href="insight-ai.html"><div class="num">03</div><div class="t">Artificial Intelligence</div><h3>에이전트가 일하는 회사와 발표만 한 회사</h3><p>기업 앱의 40%가 에이전트를 품는 해. 도입과 전환의 차이는 프로그램을 고칠 사람이 안에 있는가다.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv d3" href="insight-bio.html"><div class="num">04</div><div class="t">Bio</div><h3>신약보다 먼저 움직이는 것</h3><p>기술수출 8조→28조, GLP-1 연 20% 성장. 과학이 맞았을 때 돈이 흐르는 배관을 먼저 잡는다.</p><span class="more">읽기 →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:end;margin-bottom:40px">
+      <div><div class="eyebrow rv">07 — People</div><h2 class="h-l rv d1">투자은행, 프라이빗 뱅킹,<br>리서치, 법률이 한 테이블에</h2></div>
+      <p class="lead rv d2">국내외 금융권에서 20년 이상 쌓은 경력이 투자심의위원회에 모입니다.</p>
+    </div>
+    <div class="team-teaser">
+      <a class="tcard rv" href="team.html#so"><div class="mono">BS</div><h3>소병운</h3><div class="role">부회장 · 파트너 · 투자심의위원</div></a>
+      <a class="tcard rv d1" href="team.html#han"><div class="mono">HH</div><h3>한현철</h3><div class="role">대표이사 · 파트너 · 투자심의위원</div></a>
+      <a class="tcard rv d2" href="team.html#lee"><div class="mono">TL</div><h3>이태경</h3><div class="role">대표이사 · 파트너 · 투자심의위원</div></a>
+      <a class="tcard rv d3" href="team.html#jung"><div class="mono">SJ</div><h3>정상훈</h3><div class="role">글로벌대표 · 파트너</div></a>
+    </div>
+  </div>
+</section>
+</main>
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2 class="h-l">함께 성장할 파트너를 찾고 있다면</h2>
+      <p class="lead" style="margin-top:14px;max-width:52ch">투자 제안, 인수·매각, 자금 조달, 승계 설계까지. 어떤 단계든 편하게 연락 주십시오.</p>
+    </div>
+    <a class="btn solid" href="contact.html">문의하기 <span class="arr">→</span></a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand"><span class="mark">ART<b>US</b></span></div>
+        <p class="blurb">주식회사 아르투스는 책임(Accountability)·정직(Righteousness)·신뢰(Trust)·이해(Understanding)·전문성(Specialty)을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다.</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="philosophy.html">투자 철학</a></li>
+          <li><a href="services.html">업무 분야</a></li>
+          <li><a href="ax.html">AX 컨설팅</a></li>
+          <li><a href="decisionmaker.html">디시전메이커</a></li>
+          <li><a href="achievements.html">주요 성과</a></li>
+          <li><a href="insights.html">인사이트</a></li>
+          <li><a href="team.html">구성원</a></li>
+          <li><a href="values.html">핵심 가치</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>서울시 영등포구 여의나루로 53-1 대오빌딩 14층</li>
+          <li>Tel <a href="tel:027612025">02-761-2025</a> · Fax 02-761-2035</li>
+          <li><a href="mailto:contact@artus.kr">contact@artus.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 ARTUS · 주식회사 아르투스. All rights reserved.</span>
+      <span>Seoul, Korea</span>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js" defer></script>
 </body>
 </html>

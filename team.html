@@ -1,173 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>구성원 소개 - ARTUS</title>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <style>
-       :root {
-           --oxford-blue: #002147;
-           --goldman-sachs-gold: #B4975A;
-           --metallic-silver: #C0C0C0;
-       }
-
-       body {
-           margin: 0;
-           font-family: 'Noto Serif', serif;
-           color: var(--metallic-silver);
-           background-color: var(--oxford-blue);
-           text-align: center;
-       }
-
-       main {
-           max-width: 1200px;
-           margin: 0 auto;
-           padding: 60px 20px;
-           text-align: center;
-       }
-
-       main h2 {
-           font-family: 'Inter', sans-serif;
-           font-size: 2.2rem;
-           color: var(--goldman-sachs-gold);
-           margin-bottom: 40px;
-           text-align: center;
-       }
-
-       .team-members {
-           width: 100%;
-           max-width: 1000px;
-           margin: 0 auto;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-       }
-
-       .team-members h3 {
-           font-family: 'Inter', sans-serif;
-           font-size: 1.5rem;
-           color: var(--goldman-sachs-gold);
-           margin: 40px 0 10px;
-           padding-bottom: 5px;
-           border-bottom: 2px solid var(--goldman-sachs-gold);
-           display: inline-block;
-           text-align: center;
-           width: auto;
-           /* 줄바꿈 없이 한 줄로만 표기하도록 설정 */
-           white-space: nowrap;
-       }
-
-       .team-members p.title {
-           color: var(--goldman-sachs-gold);
-           font-family: 'Inter', sans-serif;
-           font-size: 1.1rem;
-           margin: 0 0 20px;
-       }
-
-       .team-members p.description {
-           color: var(--metallic-silver);
-           font-family: 'Noto Serif', serif;
-           font-size: 1rem;
-           line-height: 1.8;
-           margin: 0 0 40px;
-           text-align: center;
-           width: 100%;
-           max-width: 800px;
-           word-break: keep-all;
-       }
-
-       @media screen and (max-width: 768px) {
-           main {
-               padding: 40px 15px;
-           }
-
-           main h2 {
-               font-size: 1.8rem;
-           }
-
-           .team-members h3 {
-               font-size: 1.3rem;
-           }
-
-           .team-members p.title {
-               font-size: 1rem;
-           }
-
-           .team-members p.description {
-               font-size: 0.9rem;
-               padding: 0 15px;
-               line-height: 1.6;
-           }
-       }
-   </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>구성원 — ARTUS</title>
+<meta name="description" content="소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표. 투자은행·프라이빗 뱅킹·리서치·법률 전문가로 구성된 아르투스의 파트너.">
+<meta name="theme-color" content="#0B1E3A">
+<link rel="canonical" href="https://artus.kr/team.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARTUS">
+<meta property="og:title" content="구성원 — ARTUS">
+<meta property="og:description" content="소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표. 투자은행·프라이빗 뱅킹·리서치·법률 전문가로 구성된 아르투스의 파트너.">
+<meta property="og:url" content="https://artus.kr/team.html">
+<meta property="og:image" content="https://artus.kr/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/site-extra.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"ARTUS (주식회사 아르투스)","url":"https://artus.kr","email":"contact@artus.kr","telephone":"+82-2-761-2025","faxNumber":"+82-2-761-2035","address":{"@type":"PostalAddress","streetAddress":"여의나루로 53-1 대오빌딩 14층","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"},"description":"소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표. 투자은행·프라이빗 뱅킹·리서치·법률 전문가로 구성된 아르투스의 파트너."}</script>
 </head>
 <body>
-   <div id="header"></div>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav" role="banner">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="ARTUS 홈">
+      <span class="mark">ART<b>US</b></span>
+      <span class="sub">Private Equity Partners</span>
+    </a>
+    <button class="burger" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="주 메뉴">
+      <a href="index.html">홈</a>
+      <a href="philosophy.html">투자 철학</a>
+      <a href="services.html">업무 분야</a>
+      <a href="ax.html">AX 컨설팅</a>
+      <a href="decisionmaker.html">디시전메이커</a>
+      <a href="achievements.html">주요 성과</a>
+      <a href="insights.html">인사이트</a>
+      <a href="team.html">구성원</a>
+      <a class="cta" href="contact.html">문의하기</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
 
-   <main>
-       <h2>구성원 소개</h2>
-       <div class="team-members">
-           <h3>소병운</h3>
-           <p class="title">부회장, 파트너, 투자심의위원</p>
-           <p class="description">
-               소병운 부회장은 서울대학교 경제학과를 졸업하고 미국 보스턴 아서디리틀 연수와 미시간대학교 MBA 과정을 마친 뒤, 
-               하나은행 투자은행그룹 본부장과 하나IB증권 투자은행본부 전무 등을 거치며 국내 금융권에서 20년 이상 활약한 
-               투자은행(IB)·M&A 전문가입니다. 현대증권에서는 2013년부터 2015년까지 투자은행부문 대표를 맡아 대형 프로젝트 투자와 
-               사모펀드 운영을 주도했고, 이후 2016년부터 2019년까지 SVN Korea 대표이사로 재직하며 부동산 투자금융 자문 분야에서 
-               역량을 발휘했습니다. 2020년부터는 스트라이커 캐피탈 메니지먼트 부회장으로서 기업금융 자문과 신규 투자처 발굴, 
-               펀드 운영 등을 총괄하고 있으며, 에이팩트 이사회에서 3년 임기로 재선임되어 거버넌스 체계 확립과 전략적 의사결정 
-               과정에 참여하고 있습니다.
-           </p>
-
-           <h3>한현철</h3>
-           <p class="title">대표이사, 파트너, 투자심의위원</p>
-           <p class="description">
-               한현철 대표는 한국 금융투자업계를 대표하는 프라이빗 뱅커로, 20여 년간 다수의 주요 증권사에서 탁월한 경력을 쌓아 
-               명성을 확립하였습니다. 고려대학교 경영학과를 졸업한 그는 미래에셋증권(구 대우증권) 재직 당시 최연소 지점장에 
-               발탁되며 주목받기 시작했습니다. 이후 NH투자증권에서 프리미어블루 대치센터장을, 메리츠증권에서는 도곡금융센터장을 
-               역임하며, 고객 중심의 혁신적인 금융 솔루션을 제시해 왔습니다.
-
-               최근에는 다올투자증권 리테일금융센터 PIB전무로 재직하며, 리테일 금융 분야에서도 새로운 기준을 제시하고 업계의 
-               변화를 선도했습니다. 한 대표는 탁월한 리더십과 금융 투자에 대한 깊은 통찰력을 바탕으로, 고객의 자산 관리와 
-               투자 목표 실현에 기여하며 한국 금융업계의 중요한 인물로 자리매김하고 있습니다.
-           </p>
-
-           <h3>이태경</h3>
-           <p class="title">대표이사, 파트너, 투자심의위원</p>
-           <p class="description">
-               이태경 대표는 Striker Capital Management의 창업자이자 대표로, 금융 업계에서 폭넓은 경력과 전문성을 바탕으로 
-               탁월한 성과를 이루어 왔습니다. 서울대학교 경영학과를 졸업한 그는 키움증권에서 보험 산업 애널리스트로 
-               커리어를 시작하며 업계에서 두각을 나타냈습니다. 이후 현대증권으로 자리를 옮겨 금융 및 스몰캡 애널리스트로 
-               활동하며 날카로운 분석력과 통찰력을 인정받았습니다.
-
-               마이다스에셋자산운용에서는 PEF 부문을 이끌며 국내외 투자 프로젝트를 성공적으로 수행하며 리더십을 발휘했습니다. 
-               또한, 국내 인사 컨설팅 회사에서 컨설턴트로 활동하며 경영 전략 및 조직 관리에 대한 다각적인 경험을 쌓아 
-               기업 운영과 투자 활동에 새로운 시각을 더했습니다.
-
-               그의 업적은 국내를 넘어 글로벌 금융계에서도 인정받아 월스트리트 선정 아시아 베스트 애널리스트로 선정되는 
-               영예를 안았습니다. 이러한 전문성과 경험을 바탕으로 그는 Striker Capital Management를 설립, 금융과 투자, 
-               컨설팅을 융합한 혁신적인 비즈니스 모델을 통해 업계를 선도하며 새로운 기준을 제시하고 있습니다.
-           </p>
-
-           <h3>정상훈</h3>
-           <p class="title">글로벌대표, 파트너</p>
-           <p class="description">
-               정상훈 대표는 변호사로 한국과 중국 변호사 자격을 모두 보유하고 있습니다. 현재 법무법인 율촌의 중국대표를 
-               겸임하고 있습니다. 한샘의 중국 대표를 역임했습니다. 중국 로펌인 링크와 킹앤우드에서 근무했습니다. 
-               미래에셋캐피탈 투자본부와 국내 로펌인 법무법인 서정에서 근무했습니다. 
-               서울대학교 법대를 졸업하였습니다.
-           </p>
-       </div>
-   </main>
-
-   <div id="footer"></div>
-
-   <script>
-       $(document).ready(function() {
-           $("#header").load("header.html");
-           $("#footer").load("footer.html");
-       });
-   </script>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><b>05</b> · People</div>
+    <h1 class="h-xl rv">구성원</h1>
+    <p class="lead rv d1">투자은행, 프라이빗 뱅킹, 리서치, 법률. 서로 다른 자리에서 20년 이상 일해 온 네 사람이 투자심의위원회에 모입니다.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <article class="person rv" id="so"><div class="mono">BS</div><div><h3>소병운</h3><div class="role">부회장 · 파트너 · 투자심의위원</div><p>소병운 부회장은 서울대학교 경제학과를 졸업하고 미국 보스턴 아서디리틀 연수와 미시간대학교 MBA 과정을 마친 뒤, 하나은행 투자은행그룹 본부장과 하나IB증권 투자은행본부 전무 등을 거치며 국내 금융권에서 20년 이상 활약한 투자은행(IB)·M&amp;A 전문가입니다.</p><p>현대증권에서는 2013년부터 2015년까지 투자은행부문 대표를 맡아 대형 프로젝트 투자와 사모펀드 운영을 주도했고, 이후 2016년부터 2019년까지 SVN Korea 대표이사로 재직하며 부동산 투자금융 자문 분야에서 역량을 발휘했습니다. 2020년부터는 스트라이커 캐피탈 매니지먼트 부회장으로서 기업금융 자문과 신규 투자처 발굴, 펀드 운영 등을 총괄하고 있으며, 에이팩트 이사회에서 3년 임기로 재선임되어 거버넌스 체계 확립과 전략적 의사결정 과정에 참여하고 있습니다.</p></div></article>
+    <article class="person rv" id="han"><div class="mono">HH</div><div><h3>한현철</h3><div class="role">대표이사 · 파트너 · 투자심의위원</div><p>한현철 대표는 한국 금융투자업계를 대표하는 프라이빗 뱅커로, 20여 년간 다수의 주요 증권사에서 탁월한 경력을 쌓아 명성을 확립하였습니다. 고려대학교 경영학과를 졸업한 그는 미래에셋증권(구 대우증권) 재직 당시 최연소 지점장에 발탁되며 주목받기 시작했습니다. 이후 NH투자증권에서 프리미어블루 대치센터장을, 메리츠증권에서는 도곡금융센터장을 역임하며, 고객 중심의 혁신적인 금융 솔루션을 제시해 왔습니다.</p><p>최근에는 다올투자증권 리테일금융센터 PIB전무로 재직하며, 리테일 금융 분야에서도 새로운 기준을 제시하고 업계의 변화를 선도했습니다. 한 대표는 탁월한 리더십과 금융 투자에 대한 깊은 통찰력을 바탕으로, 고객의 자산 관리와 투자 목표 실현에 기여하며 한국 금융업계의 중요한 인물로 자리매김하고 있습니다.</p></div></article>
+    <article class="person rv" id="lee"><div class="mono">TL</div><div><h3>이태경</h3><div class="role">대표이사 · 파트너 · 투자심의위원</div><p>이태경 대표는 Striker Capital Management의 창업자이자 대표로, 금융 업계에서 폭넓은 경력과 전문성을 바탕으로 탁월한 성과를 이루어 왔습니다. 서울대학교 경영학과를 졸업한 그는 키움증권에서 보험 산업 애널리스트로 커리어를 시작하며 업계에서 두각을 나타냈습니다. 이후 현대증권으로 자리를 옮겨 금융 및 스몰캡 애널리스트로 활동하며 날카로운 분석력과 통찰력을 인정받았습니다.</p><p>마이다스에셋자산운용에서는 PEF 부문을 이끌며 국내외 투자 프로젝트를 성공적으로 수행하며 리더십을 발휘했습니다. 또한, 국내 인사 컨설팅 회사에서 컨설턴트로 활동하며 경영 전략 및 조직 관리에 대한 다각적인 경험을 쌓아 기업 운영과 투자 활동에 새로운 시각을 더했습니다.</p><p>그의 업적은 국내를 넘어 글로벌 금융계에서도 인정받아 월스트리트 선정 아시아 베스트 애널리스트로 선정되는 영예를 안았습니다. 이러한 전문성과 경험을 바탕으로 그는 Striker Capital Management를 설립, 금융과 투자, 컨설팅을 융합한 혁신적인 비즈니스 모델을 통해 업계를 선도하며 새로운 기준을 제시하고 있습니다.</p></div></article>
+    <article class="person rv" id="jung"><div class="mono">SJ</div><div><h3>정상훈</h3><div class="role">글로벌대표 · 파트너</div><p>정상훈 대표는 변호사로 한국과 중국 변호사 자격을 모두 보유하고 있습니다. 현재 법무법인 율촌의 중국대표를 겸임하고 있습니다. 한샘의 중국 대표를 역임했습니다. 중국 로펌인 링크와 킹앤우드에서 근무했습니다. 미래에셋캐피탈 투자본부와 국내 로펌인 법무법인 서정에서 근무했습니다. 서울대학교 법대를 졸업하였습니다.</p></div></article>
+  </div>
+</section>
+</main>
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2 class="h-l">함께 성장할 파트너를 찾고 있다면</h2>
+      <p class="lead" style="margin-top:14px;max-width:52ch">투자 제안, 인수·매각, 자금 조달, 승계 설계까지. 어떤 단계든 편하게 연락 주십시오.</p>
+    </div>
+    <a class="btn solid" href="contact.html">문의하기 <span class="arr">→</span></a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand"><span class="mark">ART<b>US</b></span></div>
+        <p class="blurb">주식회사 아르투스는 책임(Accountability)·정직(Righteousness)·신뢰(Trust)·이해(Understanding)·전문성(Specialty)을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다.</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="philosophy.html">투자 철학</a></li>
+          <li><a href="services.html">업무 분야</a></li>
+          <li><a href="ax.html">AX 컨설팅</a></li>
+          <li><a href="decisionmaker.html">디시전메이커</a></li>
+          <li><a href="achievements.html">주요 성과</a></li>
+          <li><a href="insights.html">인사이트</a></li>
+          <li><a href="team.html">구성원</a></li>
+          <li><a href="values.html">핵심 가치</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>서울시 영등포구 여의나루로 53-1 대오빌딩 14층</li>
+          <li>Tel <a href="tel:027612025">02-761-2025</a> · Fax 02-761-2035</li>
+          <li><a href="mailto:contact@artus.kr">contact@artus.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 ARTUS · 주식회사 아르투스. All rights reserved.</span>
+      <span>Seoul, Korea</span>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js" defer></script>
 </body>
 </html>
