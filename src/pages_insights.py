@@ -107,8 +107,8 @@ HUB = """
 <section class="page-hero">
   <div class="wrap">
     <div class="crumb"><b>Insights</b> · Industry perspectives</div>
-    <h1 class="h-xl rv">우리가 보는<br>네 개의 산업</h1>
-    <p class="lead rv d1">에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽고, 아르투스가 어디에서 기회를 보는지 적었습니다. 수치는 출처가 있어야 씁니다.</p>
+    <h1 class="h-xl rv">AI가 수요를 바꾸는<br>네 산업</h1>
+    <p class="lead rv d1">우리가 바꾸는 곳이 아니라 지켜보는 곳입니다. 에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽고, 확신이 서면 자본을 넣습니다. 수치는 출처가 있어야 씁니다.</p>
   </div>
 </section>
 <section class="section">

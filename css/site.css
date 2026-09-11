@@ -59,11 +59,11 @@ p{margin:0 0 1.1em}
 .nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s var(--ease),box-shadow .35s var(--ease),backdrop-filter .35s}
 .nav.scrolled{background:rgba(7,20,39,.82);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);box-shadow:0 1px 0 rgba(180,151,90,.18)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
-.brand{display:flex;align-items:baseline;gap:14px}
+.brand{display:flex;align-items:baseline;gap:14px;flex-shrink:0;white-space:nowrap}
 .brand .mark{font-family:var(--latin);font-weight:600;font-size:1.9rem;letter-spacing:.14em;color:var(--ivory);line-height:1}
 .brand .mark b{color:var(--gold);font-weight:600}
 .brand .sub{font-family:var(--latin);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mist);display:none}
-@media(min-width:900px){.brand .sub{display:block}}
+@media(min-width:1300px){.brand .sub{display:block}}
 .nav-links{display:flex;gap:24px;align-items:center}
 .nav-links a{font-size:.9rem;font-weight:500;white-space:nowrap;color:var(--ivory);opacity:.85;position:relative;padding:8px 0;letter-spacing:.01em}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}

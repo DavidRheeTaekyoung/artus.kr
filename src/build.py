@@ -6,6 +6,7 @@ import os, datetime, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pages_ax import AX, DECISIONMAKER
 from pages_insights import HUB, ENERGY, SPACE, AI, BIO
+from pages_philosophy import PHILOSOPHY as PHILOSOPHY_NEW, VALUES_INTRO
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://artus.kr"
@@ -48,7 +49,7 @@ HEAD = """<!DOCTYPE html>
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="ARTUS 홈">
       <span class="mark">ART<b>US</b></span>
-      <span class="sub">Private Equity Partners</span>
+      <span class="sub">Private Equity · AI Transformation</span>
     </a>
     <button class="burger" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" aria-label="주 메뉴">
@@ -76,7 +77,7 @@ FOOT = """</main>
     <div class="cols">
       <div>
         <div class="brand"><span class="mark">ART<b>US</b></span></div>
-        <p class="blurb">주식회사 아르투스는 책임(Accountability)·정직(Righteousness)·신뢰(Trust)·이해(Understanding)·전문성(Specialty)을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다.</p>
+        <p class="blurb">Intelligence Meets Capital. 주식회사 아르투스는 AI로 사람을 사람의 일로 돌려보내고 그 변화에 자본을 더하는 프라이빗 에쿼티 파트너입니다. 책임·정직·신뢰·이해·전문성.</p>
       </div>
       <div>
         <h4>Menu</h4>
@@ -128,16 +129,16 @@ ORN = """<svg class="orn" viewBox="0 0 520 520" fill="none" aria-hidden="true">
 INDEX = f"""
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow rv">Private Equity Partners · Seoul</div>
-    <h1 class="h-xl rv d1">자본에 의한<br>휴머니즘</h1>
-    <p class="lead rv d2">고객, 임직원, 주주가 동시에 이익과 가치를 얻는 길을 연구합니다. 다른 이의 희생에 기대지 않는, 정당하고 가치 있는 수익. 그것이 아르투스가 바이아웃을 업으로 삼은 이유입니다.</p>
+    <div class="eyebrow rv">Private Equity · AI Transformation · Seoul</div>
+    <h1 class="h-xl rv d1 latin" style="font-size:clamp(2.6rem,6.2vw,5.4rem);letter-spacing:.01em">Intelligence<br>Meets Capital.</h1>
+    <p class="lead rv d2">지성과 자본이 만나는 곳. AI로 사람을 사람의 일로 돌려보내고, 그 변화에 자본을 더합니다. 우리 자신부터 그렇게 바꿨습니다.</p>
     <div class="actions rv d3">
       <a class="btn solid" href="philosophy.html">투자 철학 <span class="arr">→</span></a>
-      <a class="btn" href="achievements.html">주요 성과</a>
+      <a class="btn" href="ax.html">AX 컨설팅</a>
     </div>
   </div>
   {ORN}
-  <div class="since">Private Equity &amp; AI Transformation · Yeouido</div>
+  <div class="since">Intelligence Meets Capital · Yeouido</div>
   <div class="scroll-cue"><i></i>Scroll</div>
 </section>
 
@@ -508,11 +509,13 @@ NOTFOUND = """
 </section>
 """
 
-DESC = "ARTUS(주식회사 아르투스)는 책임·정직·신뢰·이해·전문성을 바탕으로 고객 자산의 안정적 성장을 추구하는 프라이빗 에쿼티 파트너입니다. 기업인수합병, 지분투자, 신디케이션, 상속·증여 설계."
+DEAL_COUNT = "열 몇 개의"
+DEAL_SOURCE = ""
+DESC = "Intelligence Meets Capital. ARTUS(주식회사 아르투스)는 AI로 사람을 사람의 일로 돌려보내고 그 변화에 자본을 더하는 프라이빗 에쿼티 파트너입니다. AX 컨설팅, 기업인수합병, 지분투자, 신디케이션."
 
-page("index.html", "ARTUS — 자본에 의한 휴머니즘 · Private Equity Partners", DESC, INDEX)
-page("philosophy.html", "투자 철학 — ARTUS", "자본 활동에 의한 지속가능한 공동 가치. 고객·임직원·주주가 함께 성장하는 방법을 연구하는 아르투스의 투자 철학.", PHILOSOPHY)
-page("values.html", "핵심 가치 — ARTUS", "Accountability, Righteousness, Trust, Understanding, Specialty. ARTUS라는 이름에 담긴 다섯 가지 핵심 가치.", VALUES)
+page("index.html", "ARTUS — Intelligence Meets Capital", DESC, INDEX)
+page("philosophy.html", "투자 철학 — 사람을 사람의 일로 돌려보냅니다 · ARTUS", "한 사람이 열 몇 개의 딜을 손실 없이 굴리는 방식을 밖으로 옮깁니다. 자본과 AI에 의한 휴머니즘. 우리가 바꾸는 회사와 우리가 지켜보는 산업.", PHILOSOPHY_NEW.replace("[DEAL_COUNT]", DEAL_COUNT).replace("[DEAL_SOURCE]", DEAL_SOURCE))
+page("values.html", "핵심 가치 — ARTUS", "Accountability, Righteousness, Trust, Understanding, Specialty. 원래의 뜻 위에 AI 시대의 뜻을 한 겹 더 입힌 다섯 가지 핵심 가치.", VALUES_INTRO)
 page("services.html", "업무 분야 — ARTUS", "기업인수합병(M&A), 지분투자, 신디케이션, 상속·증여 설계. 아르투스의 네 가지 업무 분야와 수행 절차.", SERVICES)
 page("achievements.html", "주요 성과 — ARTUS", "만나코퍼레이션 IRR 59%, 에이치앤비아시아 IRR 39% 등 스트라이커 PEF의 투자 성과와 위험관리 사례.", ACHIEVEMENTS)
 page("team.html", "구성원 — ARTUS", "소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표. 투자은행·프라이빗 뱅킹·리서치·법률 전문가로 구성된 아르투스의 파트너.", TEAM)

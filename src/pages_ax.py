@@ -7,8 +7,8 @@ AX = """
 <section class="page-hero">
   <div class="wrap">
     <div class="crumb"><b>AX</b> · AI Transformation</div>
-    <h1 class="h-xl rv">회사 전체를<br>수시간 안에 AX합니다</h1>
-    <p class="lead rv d1">코딩을 전혀 모르는 구성원 전원이, 자기 말로 회사의 프로그램을 짓고 고치게 됩니다. 아르투스는 이 방식으로 운용업을 스스로 전환했고, 지금은 프랜차이즈·제조·미디어 기업의 전환을 함께 하고 있습니다.</p>
+    <h1 class="h-xl rv">한 사람이 열 몇 개의 딜을<br>손실 없이 굴리는 방식을<br>당신 회사에 옮깁니다</h1>
+    <p class="lead rv d1">코딩을 전혀 모르는 구성원 전원이 자기 말로 회사의 프로그램을 짓고 고치게 됩니다. 아르투스는 이 방식으로 운용업을 먼저 바꿨고, 지금은 프랜차이즈·제조·미디어 기업을 바꾸고 있습니다. 필요하면 자본도 함께 넣습니다.</p>
   </div>
 </section>
 
