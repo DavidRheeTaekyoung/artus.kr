@@ -2,13 +2,19 @@
 """ARTUS 정적 페이지 생성기.
 python src/build.py  → 저장소 루트에 index.html 등 7개 페이지와 404.html을 쓴다.
 헤더·푸터·메타를 한 곳에서 관리하기 위한 것이며, 산출 HTML은 의존성 없이 그대로 서비스된다."""
-import os, datetime, sys
+import os, datetime, sys, hashlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pages_ax import AX, DECISIONMAKER
 from pages_insights import HUB, ENERGY, SPACE, AI, BIO
 from pages_philosophy import PHILOSOPHY as PHILOSOPHY_NEW, VALUES_INTRO
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def _v(*files):
+    h = hashlib.md5()
+    for f in files:
+        h.update(open(os.path.join(ROOT, f), "rb").read())
+    return h.hexdigest()[:8]
+V = _v("css/site.css", "css/site-extra.css", "js/site.js")
 SITE = "https://artus.kr"
 YEAR = datetime.date.today().year
 
@@ -39,8 +45,8 @@ HEAD = """<!DOCTYPE html>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="css/site-extra.css">
+<link rel="stylesheet" href="css/site.css?v={v}">
+<link rel="stylesheet" href="css/site-extra.css?v={v}">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"FinancialService","name":"ARTUS (주식회사 아르투스)","url":"{site}","email":"contact@artus.kr","telephone":"+82-2-761-2025","faxNumber":"+82-2-761-2035","address":{{"@type":"PostalAddress","streetAddress":"여의나루로 53-1 대오빌딩 14층","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"}},"description":"{desc}"}}</script>
 </head>
 <body>
@@ -101,7 +107,7 @@ FOOT = """</main>
     </div>
   </div>
 </footer>
-<script src="js/site.js" defer></script>
+<script src="js/site.js?v={v}" defer></script>
 </body>
 </html>
 """
@@ -109,7 +115,7 @@ FOOT = """</main>
 def page(file, title, desc, body):
     navlinks = "\n".join(f'      <a href="{f}">{n}</a>' for f, n in NAV)
     footlinks = "\n".join(f'          <li><a href="{f}">{n}</a></li>' for f, n in NAV[1:] + FOOT_EXTRA)
-    html = HEAD.format(title=title, desc=desc, site=SITE, file=file, navlinks=navlinks) + body + FOOT.format(footlinks=footlinks, year=YEAR)
+    html = HEAD.format(title=title, desc=desc, site=SITE, file=file, navlinks=navlinks, v=V) + body + FOOT.format(footlinks=footlinks, year=YEAR, v=V)
     with open(os.path.join(ROOT, file), "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", file)

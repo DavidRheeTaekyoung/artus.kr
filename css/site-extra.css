@@ -6,7 +6,7 @@
 @media(prefers-reduced-motion:reduce){.marquee .track{animation:none}}
 .chapter{font-family:var(--latin);font-size:clamp(4rem,9vw,8rem);line-height:.9;color:transparent;-webkit-text-stroke:1px rgba(180,151,90,.45);font-weight:600;margin-bottom:-.15em;user-select:none}
 .on-ivory .chapter{-webkit-text-stroke:1px rgba(143,118,68,.45)}
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
 .pillar{padding:38px 34px;border-left:1px solid var(--line);background:rgba(255,255,255,.015)}
 .pillar:first-child{border-left:0}
 .pillar .k{font-family:var(--latin);font-size:2.2rem;color:var(--gold);line-height:1;margin-bottom:18px;font-weight:600}
@@ -17,12 +17,12 @@
 .on-ivory .pillar .k{color:var(--gold-3)}
 .on-ivory .pillar p{color:var(--mist-2)}
 @media(max-width:900px){.pillars{grid-template-columns:1fr}.pillar{border-left:0;border-top:1px solid var(--line)}.pillar:first-child{border-top:0}}
-.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;counter-reset:f}
+.flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;counter-reset:f}
 .flow div{border:1px solid rgba(7,20,39,.14);background:var(--paper);padding:20px 16px;border-radius:4px;position:relative}
 .flow div::before{counter-increment:f;content:"0" counter(f);font-family:var(--latin);color:var(--gold-3);font-size:.85rem;letter-spacing:.2em;display:block;margin-bottom:10px}
 .flow div b{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--ink);margin-bottom:6px}
 .flow div span{font-size:.85rem;color:var(--mist-2)}
-@media(max-width:1000px){.flow{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1000px){.flow{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.flow{grid-template-columns:1fr 1fr}}
 .quote-band{padding:clamp(70px,9vw,120px) 0;background:var(--ink);position:relative;overflow:hidden}
 .quote-band::before{content:"\201C";position:absolute;left:var(--gutter);top:-.1em;font-family:var(--latin);font-size:22rem;line-height:1;color:rgba(180,151,90,.09);pointer-events:none}
@@ -44,19 +44,19 @@
 .on-ivory .case li{border-color:rgba(7,20,39,.1)}
 .on-ivory .case li::before{background:var(--gold-3)}
 @media(max-width:800px){.case{grid-template-columns:1fr;gap:16px}}
-.rolecards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.rolecards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
 .rolecard{border:1px solid var(--line);padding:26px 20px;border-radius:4px;background:rgba(255,255,255,.015)}
 .rolecard .n{font-family:var(--serif);font-size:1.25rem;color:var(--ivory)}
 .rolecard .e{font-family:var(--latin);letter-spacing:.18em;text-transform:uppercase;font-size:.68rem;color:var(--gold);margin:4px 0 12px}
 .rolecard p{font-size:.9rem;color:var(--mist);margin:0}
-@media(max-width:1000px){.rolecards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1000px){.rolecards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.rolecards{grid-template-columns:1fr}}
 .constitution{columns:2;column-gap:48px;counter-reset:c}
 .constitution p{break-inside:avoid;margin:0 0 16px;padding-left:44px;position:relative;font-size:.98rem;color:var(--mist)}
 .constitution p::before{counter-increment:c;content:counter(c,decimal-leading-zero);position:absolute;left:0;top:.1em;font-family:var(--latin);color:var(--gold);letter-spacing:.1em}
 .constitution p b{color:var(--ivory);font-weight:600}
 @media(max-width:800px){.constitution{columns:1}}
-.insight-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.insight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
 .icard{display:block;border:1px solid var(--line);padding:38px 34px 70px;border-radius:4px;position:relative;overflow:hidden;transition:transform .35s var(--ease),border-color .35s;min-height:300px}
 .icard::after{content:"";position:absolute;inset:auto -40% -60% auto;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(180,151,90,.16),transparent 62%);pointer-events:none}
 .icard:hover{transform:translateY(-4px);border-color:rgba(180,151,90,.6)}
