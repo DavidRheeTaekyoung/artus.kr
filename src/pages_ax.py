@@ -202,9 +202,9 @@ DECISIONMAKER = """
     <div class="chapter">02</div>
     <div class="eyebrow rv">One company, one screen</div>
     <h2 class="h-l rv d1" style="margin-bottom:12px">한 회사 · 한 화면</h2>
-    <p class="lead rv d2" style="margin-bottom:40px;max-width:62ch">사람은 하나, 대표뿐입니다. 나머지는 역할을 맡은 기계 인격과 하나의 기록소입니다. 준비, 위험, 판단은 결코 한 손에 있지 않습니다.</p>
+    <p class="lead rv d2" style="margin-bottom:40px;max-width:62ch">결정의 자리는 하나, 서명권자입니다. 그 주위를 역할을 맡은 기계 인격과 하나의 기록소가 받치고, 파트너와 투자심의위원회가 사람의 판단을 더합니다. 준비, 위험, 판단은 결코 한 손에 있지 않습니다.</p>
     <div class="rolecards rv">
-      <div class="rolecard"><div class="n">대표</div><div class="e">The only human</div><p>바깥과 만나는 유일한 문. 미팅·전화·발송·협상·도장·기준집 개정. 세 기계 중 누구도 대신하지 않는다.</p></div>
+      <div class="rolecard"><div class="n">서명권자</div><div class="e">The signatory</div><p>바깥과 만나는 문이자 결정의 자리. 미팅·협상·도장·기준집 개정은 사람의 몫이며, 세 기계 중 누구도 대신하지 않는다. 파트너와 투자심의위원회가 그 판단을 함께 진다.</p></div>
       <div class="rolecard"><div class="n">알프레드</div><div class="e">Chief of staff</div><p>대표에게 온 자료를 읽고 정리한다. 텔레그램으로 음성까지 받고, 메일·일정을 읽어 약속·질문·할 일을 기억한다. 밖으로 나가는 것은 승인 큐까지만.</p></div>
       <div class="rolecard"><div class="n">존코너</div><div class="e">Head of investment</div><p>투자심의위원회 사무국. 체크리스트, 결격 심사, 수익추정모형, 실행 방안, 텀시트 초안을 만든다. 길을 찾되 결정은 하지 않는다.</p></div>
       <div class="rolecard"><div class="n">카산드라</div><div class="e">Private counsel</div><p>규칙 안에 있어도 이상한 패턴을 잡아 경고한다. 알프레드의 일, 존코너의 준비, 딜, 대표 자신까지. 지적은 증거로만 닫힌다.</p></div>
@@ -239,7 +239,7 @@ DECISIONMAKER = """
       <div class="prose">
         <p class="rv">딜, 사람, 문서, 메일, 약속, 체크리스트 값, 판정, 투심위 기록, 중단 사유, 기저율이 전부 한 기록소에만 쌓입니다. 서고는 둘입니다. 계약서·재무제표·녹음·실명·계좌 같은 <strong>원본은 사무실 PC에 평문으로만</strong> 있고, 클라우드에는 값·등급·판정·이력·지문·코드명만 갑니다.</p>
         <p class="rv d1">회의 녹취는 로컬 음성인식 엔진으로만 옮깁니다. 상대의 니즈와 속내가 담긴 자료는 밖으로 내보내지 않는다는 것이 처음부터의 원칙입니다. 들은 것은 반드시 먼저 보여 줍니다. "30억"을 "3억"으로 잘못 들어도 그럴듯하게 읽히기 때문입니다.</p>
-        <p class="rv d2">이 체계 위에서 대표 한 사람이 동시에 여러 건의 딜을 굴리고, 투입 시간과 시간당 이익까지 같은 화면에서 봅니다. <strong>운용업의 AX란 사람을 줄이는 것이 아니라, 한 사람이 놓치지 않게 만드는 것</strong>이었습니다.</p>
+        <p class="rv d2">이 체계 위에서 서명권자 한 사람의 시간으로 여러 건의 딜을 동시에 준비하고, 투입 시간과 시간당 이익까지 같은 화면에서 봅니다. <strong>운용업의 AX란 사람을 줄이는 것이 아니라, 사람이 놓치지 않게 만드는 것</strong>이었습니다.</p>
         <a class="btn rv d3" href="ax.html" style="margin-top:10px">같은 체계를 우리 회사에 <span class="arr">→</span></a>
       </div>
     </div>

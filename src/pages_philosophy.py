@@ -22,7 +22,7 @@ PHILOSOPHY = """
         <h2 class="h-l rv d1">한 사람이 [DEAL_COUNT] 딜을<br>손실 없이 굴립니다</h2>
       </div>
       <div class="prose">
-        <p class="rv">아르투스의 철학은 문장이 아니라 기록에서 시작합니다. 대표 한 사람이 M&amp;A, 부동산, 구조화 딜과 AX 프로젝트를 동시에 [DEAL_COUNT] 굴리고, 그 사이 손실을 낸 적이 없습니다.[DEAL_SOURCE]</p>
+        <p class="rv">아르투스의 철학은 문장이 아니라 기록에서 시작합니다. 서명권자 한 사람의 시간으로 M&amp;A, 부동산, 구조화 딜과 AX 프로젝트를 동시에 [DEAL_COUNT] 준비하고, 파트너들의 투자심의를 거쳐 결정하며, 그 사이 손실을 낸 적이 없습니다.[DEAL_SOURCE]</p>
         <p class="rv d1">비결은 더 오래 일하는 것이 아닙니다. <strong>일 하나마다 프로그램 하나</strong>를 그 자리에서 만들어 붙이는 방식입니다. 여러 에이전트를 병렬로 돌려 필요한 프로그램을 즉시 만들고, 검사를 통과한 것만 쓰고, 새벽에는 감사 에이전트가 어제 만든 것을 다시 써 봅니다. 사람은 준비된 재료 위에서 판단만 합니다.</p>
         <p class="rv d2">이 방식의 통합본이 <a href="decisionmaker.html" style="color:var(--gold-3);text-decoration:underline;text-underline-offset:3px">디시전메이커</a>입니다. 접수부터 서명 직전까지를 한 화면으로 굴리고, 판단과 도장은 사람이 합니다. 우리는 운용업을 이렇게 먼저 바꿨습니다.</p>
       </div>
