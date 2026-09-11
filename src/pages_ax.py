@@ -23,7 +23,7 @@ AX = """
       <div class="sticky">
         <div class="chapter">01</div>
         <div class="eyebrow rv">What AX means here</div>
-        <h2 class="h-l rv d1">도구를 들이는 것이 아니라,<br>일하는 방식을 바꾸는 것</h2>
+        <h2 class="h-l rv d1">사람의 일만<br>남기는 전환</h2>
       </div>
       <div class="prose">
         <p class="rv">많은 회사가 AI를 "도입"합니다. 챗봇을 붙이고, 요약 기능을 켜고, 컨설팅 보고서를 받습니다. 그리고 여섯 달 뒤에도 업무는 그대로입니다. 프로그램을 고칠 수 있는 사람이 여전히 밖에 있기 때문입니다.</p>
@@ -39,8 +39,8 @@ AX = """
     <div class="chapter">02</div>
     <div class="eyebrow rv">Tabernacle — the operating system of AX</div>
     <div class="split" style="align-items:end;margin-bottom:44px">
-      <h2 class="h-l rv d1">태버내클: 그림이 먼저,<br>검사를 못 넘으면 산출물이 아니다</h2>
-      <p class="lead rv d2">"네게 보인 양식대로 지으라." 사람은 그림으로 이해하고, 에이전트는 문서와 코드를 읽습니다. 둘이 같은 진실을 말해야 하고, 어긋나는 순간을 기계가 먼저 잡아야 합니다.</p>
+      <h2 class="h-l rv d1">회사가 스스로<br>진화하는 체계</h2>
+      <p class="lead rv d2">태버내클(TABERNACLE). 그림이 먼저이고, 검사를 못 넘으면 산출물이 아닙니다. 사람은 그림으로 이해하고 에이전트는 문서와 코드를 읽으니, 둘이 같은 진실을 말해야 하고 어긋나는 순간은 기계가 먼저 잡습니다.</p>
     </div>
     <div class="pillars rv">
       <div class="pillar"><div class="k">3</div><h3>사람이 들어오는 문 셋</h3><p>오너의 채팅창은 즉시, 토론실의 결정은 1분 안에, 텔레그램 방에서 이름을 부르면 30초 안에 에이전트가 집습니다. 직원 누구나 쓰던 화면에서 이상한 것을 발견하면 셋 중 아무 문으로나 들어옵니다.</p></div>
@@ -159,7 +159,7 @@ AX = """
       <div class="sticky">
         <div class="chapter">04</div>
         <div class="eyebrow rv">Engagement model</div>
-        <h2 class="h-l rv d1">첫날의 산출물은<br>질문 목록입니다</h2>
+        <h2 class="h-l rv d1">증명된 방식을<br>옮겨 심습니다</h2>
       </div>
       <div class="prose">
         <p class="rv">첫날 발주처의 채팅방에 에이전트를 심고 태버내클 문서 한 장을 깝니다. 그날의 산출물은 코드가 아니라 <strong>질문 목록</strong>입니다. 리서치가 붙은 객관식 질의서가 나가고, 답이 돌아오면 설계가 판을 올립니다.</p>
