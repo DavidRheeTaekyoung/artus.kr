@@ -285,6 +285,7 @@ p{margin:0 0 1.1em}
   .cbox .v{font-size:1.15rem}
   .footer .legal{flex-direction:column;gap:6px}
   .nav .wrap{height:72px}
+  .h-xl br,.h-l br{display:none}
   .eyebrow{font-size:.74rem;letter-spacing:.2em;align-items:flex-start;line-height:1.7}
   .eyebrow::before{flex:0 0 24px;width:24px;margin-top:.6em}
   .crumb{font-size:.7rem;letter-spacing:.2em}
