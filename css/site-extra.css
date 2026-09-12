@@ -96,3 +96,33 @@
 
 /* hero text never waits for reveal */
 .hero .rv,.page-hero .rv{opacity:1;transform:none;transition:none}
+
+/* ── mobile refinements (≤800px) ──────────────────── */
+@media(max-width:800px){
+  .rolecard .e{font-size:.74rem;letter-spacing:.12em}
+  .icard{min-height:0;padding:26px 22px}
+  .icard .more{position:static;display:inline-block;margin-top:16px}
+  .icard .t{font-size:.78rem;letter-spacing:.16em}
+  .icard .num{font-size:2.2rem;right:20px;top:18px}
+  .icard h3{font-size:1.3rem;padding-right:44px}
+  .quote-band{padding:64px 0}
+  .quote-band::before{font-size:10rem;top:0}
+  .quote-band blockquote{max-width:none;font-size:1.45rem}
+  .article .body p:first-of-type::first-letter{font-size:2.6em;margin:.06em .1em 0 0}
+  .article .body h2{font-size:1.35rem;margin:34px 0 12px}
+  .marquee .track{gap:38px}
+  .marquee .track span::before{margin-right:38px}
+  .case .tag{font-size:.7rem;letter-spacing:.16em}
+  .pillar{padding:28px 22px}
+  .pillar .k{font-size:1.9rem;margin-bottom:12px}
+  .constitution p{padding-left:38px;font-size:.95rem}
+  .aside .box{padding:22px}
+  .sources ol{font-size:.86rem}
+
+  /* 작은 대문자 라벨 일괄 — 12px에 자간 3px은 모바일에서 깨져 보인다 */
+  .cbox .t,.deal .fund,.aside .box .t,.sources h4,.case .tag,
+  .icard .t,.rolecard .e,.trio .t,.stat .s{
+    font-size:.76rem;letter-spacing:.14em}
+  .cbox{padding:26px 22px}
+  .cbox .v{line-height:1.45}
+}
