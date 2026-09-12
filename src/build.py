@@ -47,7 +47,7 @@ HEAD = """<!DOCTYPE html>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="css/site.css?v={v}">
 <link rel="stylesheet" href="css/site-extra.css?v={v}">
-<script type="application/ld+json">{{"@context":"https://schema.org","@type":"FinancialService","name":"ARTUS (주식회사 아르투스)","url":"{site}","email":"contact@artus.kr","telephone":"+82-2-761-2025","faxNumber":"+82-2-761-2035","address":{{"@type":"PostalAddress","streetAddress":"국제금융로8길 27-9 동북빌딩 10층","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"}},"description":"{desc}"}}</script>
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"FinancialService","name":"ARTUS (주식회사 아르투스)","url":"{site}","email":"contact@artus.kr","address":{{"@type":"PostalAddress","streetAddress":"국제금융로8길 27-9 동북빌딩 10층","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"}},"description":"{desc}"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -96,7 +96,6 @@ FOOT = """</main>
         <h4>Office</h4>
         <ul>
           <li>서울시 영등포구 국제금융로8길 27-9 동북빌딩 10층</li>
-          <li>Tel <a href="tel:027612025">02-761-2025</a> · Fax 02-761-2035</li>
           <li><a href="mailto:contact@artus.kr">contact@artus.kr</a></li>
         </ul>
       </div>
@@ -489,16 +488,15 @@ CONTACT = """
   <div class="wrap">
     <div class="crumb"><b>06</b> · Contact</div>
     <h1 class="h-xl rv">문의하기</h1>
-    <p class="lead rv d1">투자 제안, 인수·매각, 자금 조달, 승계 설계. 어떤 단계든 편하게 연락 주십시오. 영업일 기준 하루 안에 답을 드립니다.</p>
+    <p class="lead rv d1">투자 제안, 인수와 매각, 자금 조달, 승계 설계, 그리고 AX. 어느 단계에 계시든 이메일로 편하게 연락 주십시오.</p>
   </div>
 </section>
 <section class="section">
   <div class="wrap">
     <div class="contact-grid">
-      <div class="cbox rv"><div class="t">Email</div><div class="v"><a href="mailto:contact@artus.kr">contact@artus.kr</a></div><div class="s">투자 제안서와 자료는 이메일로 보내 주십시오.</div></div>
-      <div class="cbox rv d1"><div class="t">Phone · Fax</div><div class="v"><a href="tel:027612025">02-761-2025</a></div><div class="s">Fax 02-761-2035 · 평일 09:00–18:00</div></div>
-      <div class="cbox rv d2"><div class="t">Office</div><div class="v">서울시 영등포구 국제금융로8길 27-9<br>동북빌딩 10층</div><div class="s"><a href="https://map.naver.com/p/search/%EA%B5%AD%EC%A0%9C%EA%B8%88%EC%9C%B5%EB%A1%9C8%EA%B8%B8%2027-9" target="_blank" rel="noopener">네이버 지도에서 보기 →</a></div></div>
-      <div class="cbox rv d3"><div class="t">Company</div><div class="v">주식회사 아르투스<br><span class="latin" style="font-size:1rem;letter-spacing:.14em">ARTUS Private Equity Partners</span></div><div class="s">여의도, 서울</div></div>
+      <div class="cbox rv" style="grid-column:1/-1"><div class="t">Email</div><div class="v" style="font-size:1.6rem"><a href="mailto:contact@artus.kr">contact@artus.kr</a></div><div class="s">투자 제안, AX 상담, 자료 송부 모두 이메일로 받고 있습니다. 영업일 기준 하루 안에 답을 드립니다.</div></div>
+      <div class="cbox rv d1"><div class="t">Office</div><div class="v">서울시 영등포구 국제금융로8길 27-9<br>동북빌딩 10층</div><div class="s"><a href="https://map.naver.com/p/search/%EA%B5%AD%EC%A0%9C%EA%B8%88%EC%9C%B5%EB%A1%9C8%EA%B8%B8%2027-9" target="_blank" rel="noopener">네이버 지도에서 보기 →</a></div></div>
+      <div class="cbox rv d2"><div class="t">Company</div><div class="v">주식회사 아르투스<br><span class="latin" style="font-size:1rem;letter-spacing:.14em">ARTUS Private Equity Partners</span></div><div class="s">여의도, 서울</div></div>
     </div>
   </div>
 </section>
@@ -525,7 +523,7 @@ page("values.html", "핵심 가치 — ARTUS", "Accountability, Righteousness, T
 page("services.html", "업무 분야 — ARTUS", "기업인수합병(M&A), 지분투자, 신디케이션, 상속·증여 설계. 아르투스의 네 가지 업무 분야와 수행 절차.", SERVICES)
 page("achievements.html", "주요 성과 — ARTUS", "만나코퍼레이션 IRR 59%, 에이치앤비아시아 IRR 39% 등 스트라이커 PEF의 투자 성과와 위험관리 사례.", ACHIEVEMENTS)
 page("team.html", "구성원 — ARTUS", "소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표. 투자은행·프라이빗 뱅킹·리서치·법률 전문가로 구성된 아르투스의 파트너.", TEAM)
-page("contact.html", "문의하기 — ARTUS", "ARTUS 연락처. 서울 영등포구 국제금융로8길 27-9 동북빌딩 10층, 02-761-2025, contact@artus.kr", CONTACT)
+page("contact.html", "문의하기 — ARTUS", "ARTUS 연락처. 서울 영등포구 국제금융로8길 27-9 동북빌딩 10층, contact@artus.kr", CONTACT)
 page("ax.html", "AX — 일은 기계에게, 판단은 사람에게 · ARTUS", "일은 기계에게, 판단은 사람에게. 회사의 시스템을 회사 사람이 자기 말로 만들고 고치는 체계, 태버내클. 프랜차이즈 통합 플랫폼, 3개국 생산 거점 통합 관제, 임직원 요청 즉시 반영 체계 등 실제 프로젝트.", AX)
 page("decisionmaker.html", "디시전메이커 — 운용업을 먼저 바꿨습니다 · ARTUS", "투자 의사결정의 준비를 완성하는 기계. 접수·분류·심사·로드맵·투심위·서명을 한 회사·한 화면으로. 판단과 도장은 사람이 합니다.", DECISIONMAKER)
 page("insights.html", "인사이트 — AI가 수요를 바꾸는 네 산업 · ARTUS", "에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽고 아르투스가 보는 투자 지점을 적었습니다.", HUB)
