@@ -56,11 +56,11 @@ PHILOSOPHY = """
     <div class="eyebrow rv">Where we invest</div>
     <div class="split" style="align-items:end;margin-bottom:40px">
       <h2 class="h-l rv d1">직접 참여하는 기업,<br>깊이 연구하는 산업</h2>
-      <p class="lead rv d2">AI가 가격을 바꾸는 곳은 두 종류입니다. 우리는 각각에 다른 방식으로 자본을 배치합니다.</p>
+      <p class="lead rv d2">지능이 흔해지면 값은 물리 세계로 옮겨 갑니다. 우리는 그 변화에 두 가지 방식으로 참여합니다.</p>
     </div>
     <div class="grid grid-2">
       <div class="card rv"><div class="num">직접 참여</div><h3>AI와 가장 멀리 있던 기업</h3><p>많은 인력이 반복적인 사무 업무를 맡고 있는 산업에서 AI는 비용과 생산성의 구조를 가장 크게 바꿉니다. 우리는 이런 기업에 AX를 직접 수행하고 지분을 투자하며, 필요하면 인수해 함께 경영합니다.</p><a class="more" href="ax.html">AX 서비스 →</a></div>
-      <div class="card rv d1"><div class="num">연구와 투자</div><h3>AI가 수요를 바꾸는 산업</h3><p>AI가 전력을 소비하는 에너지, 위성과 발사체가 기반시설이 되는 스페이스, AI 산업 자체, 그리고 AI가 연구를 가속하는 바이오. 우리는 이 네 산업을 지속적으로 연구하고, 확신이 서는 기회에 자본을 투자합니다.</p><a class="more" href="insights.html">산업 인사이트 →</a></div>
+      <div class="card rv d1"><div class="num">연구와 투자</div><h3>지능이 값을 올려놓는 물리 세계</h3><p>AI는 우리에게 투자 대상이기 전에 원인입니다. 내면의 일을 기계가 맡을수록 값이 오르는 것은 대체되지 않는 물리 세계입니다. 지능을 돌리는 <strong>힘</strong>, 몸이 놓이는 <strong>자리</strong>, 그리고 <strong>몸</strong> 자체. 우리는 이 셋을 지속적으로 연구하고 확신이 서는 기회에 자본을 투자합니다.</p><a class="more" href="insights.html">산업 인사이트 →</a></div>
     </div>
   </div>
 </section>

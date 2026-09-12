@@ -246,14 +246,14 @@ INDEX = f"""
 <section class="section on-ivory">
   <div class="wrap">
     <div class="split" style="align-items:end;margin-bottom:40px">
-      <div><div class="eyebrow rv">06 — Insights</div><h2 class="h-l rv d1">AI가 수요를 바꾸는 네 산업</h2></div>
-      <p class="lead rv d2">에너지, 스페이스, 인공지능, 바이오. 우리가 지속적으로 연구하고 투자 기회를 찾는 산업입니다.</p>
+      <div><div class="eyebrow rv">06 — Insights</div><h2 class="h-l rv d1">지능이 흔해지면<br>값은 물리 세계로</h2></div>
+      <p class="lead rv d2">네 개의 산업이 아니라 하나의 논지입니다. 지능, 그리고 지능이 값을 올려놓는 힘과 자리와 몸.</p>
     </div>
     <div class="insight-grid">
-      <a class="icard rv" href="insight-energy.html"><div class="num">01</div><div class="t">Energy</div><h3>전기를 구하는 쪽이 협상력을 잃는 시대</h3><p>데이터센터 전력수요 460→1,000 TWh. 발전원보다 계통·저장·수요지 인접성이 프리미엄을 받는다.</p><span class="more">읽기 →</span></a>
-      <a class="icard rv d1" href="insight-space.html"><div class="num">02</div><div class="t">Space</div><h3>기술 자립에서 시장 자립으로</h3><p>우주청 예산 1조 1,201억, 뉴스페이스 펀드 81억→2,000억. 민간의 첫 계약이 어디서 나오는가.</p><span class="more">읽기 →</span></a>
-      <a class="icard rv d2" href="insight-ai.html"><div class="num">03</div><div class="t">Artificial Intelligence</div><h3>에이전트가 일하는 회사와 발표만 한 회사</h3><p>기업 앱의 40%가 에이전트를 품는 해. 도입과 전환의 차이는 프로그램을 고칠 사람이 안에 있는가다.</p><span class="more">읽기 →</span></a>
-      <a class="icard rv d3" href="insight-bio.html"><div class="num">04</div><div class="t">Bio</div><h3>신약보다 먼저 움직이는 것</h3><p>기술수출 8조→28조, GLP-1 연 20% 성장. 과학이 맞았을 때 돈이 흐르는 배관을 먼저 잡는다.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv" href="insight-ai.html"><div class="num">01</div><div class="t">Intelligence · 지능</div><h3>지능이 흔해지는 중입니다</h3><p>기업 앱의 40%가 에이전트를 품는 해. 지능은 전기가 되어 가고, 값은 그 바깥으로 옮겨 갑니다.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv d1" href="insight-energy.html"><div class="num">02</div><div class="t">Power · 힘</div><h3>생각 한 번에도 전기가 듭니다</h3><p>데이터센터 전력수요 460→1,000 TWh. 병목은 발전이 아니라 어디에 전기가 있느냐입니다.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv d2" href="insight-space.html"><div class="num">03</div><div class="t">Space · 자리</div><h3>이동이 싸지면 도시의 모양이 바뀝니다</h3><p>우주 산업이 아니라 공간 그 자체. 밀집의 이유가 사라지면 주변부의 값이 오릅니다.</p><span class="more">읽기 →</span></a>
+      <a class="icard rv d3" href="insight-bio.html"><div class="num">04</div><div class="t">Body · 몸</div><h3>지능이 흔해질수록 몸의 값이 오릅니다</h3><p>비만치료제 시장 연 48.4% 성장. 아픈 사람을 고치는 약이 아니라 건강한 사람이 몸을 관리하는 약입니다.</p><span class="more">읽기 →</span></a>
     </div>
   </div>
 </section>
@@ -528,17 +528,17 @@ page("team.html", "구성원 — ARTUS", "소병운 부회장, 한현철 대표,
 page("contact.html", "문의하기 — ARTUS", "ARTUS 연락처. 서울 영등포구 국제금융로8길 27-9 동북빌딩 10층, 02-761-2025, contact@artus.kr", CONTACT)
 page("ax.html", "AX — 일은 기계에게, 판단은 사람에게 · ARTUS", "일은 기계에게, 판단은 사람에게. 회사의 시스템을 회사 사람이 자기 말로 만들고 고치는 체계, 태버내클. 프랜차이즈 통합 플랫폼, 3개국 생산 거점 통합 관제, 임직원 요청 즉시 반영 체계 등 실제 프로젝트.", AX)
 page("decisionmaker.html", "디시전메이커 — 운용업을 먼저 바꿨습니다 · ARTUS", "투자 의사결정의 준비를 완성하는 기계. 접수·분류·심사·로드맵·투심위·서명을 한 회사·한 화면으로. 판단과 도장은 사람이 합니다.", DECISIONMAKER)
-page("insights.html", "인사이트 — AI가 수요를 바꾸는 네 산업 · ARTUS", "에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽고 아르투스가 보는 투자 지점을 적었습니다.", HUB)
-page("insight-energy.html", "에너지 — 전기를 구하는 쪽이 협상력을 잃는 시대 · ARTUS Insight", "데이터센터 전력수요 460→1,000 TWh, SMR 특별법, 해상풍력과 계통 병목. 2026년 에너지 투자 지점.", ENERGY)
-page("insight-space.html", "스페이스 — 기술 자립에서 시장 자립으로 · ARTUS Insight", "우주항공청 2026 예산 1조 1,201억, 뉴스페이스 펀드 2,000억. 한국 우주산업의 시장 자립과 투자 지점.", SPACE)
-page("insight-ai.html", "인공지능 — 에이전트가 일하는 회사와 발표만 한 회사 · ARTUS Insight", "2026년 기업 앱의 40%가 AI 에이전트를 통합. 도입과 전환의 차이, 그리고 투자 지점.", AI)
-page("insight-bio.html", "바이오 — 신약보다 먼저 움직이는 것 · ARTUS Insight", "GLP-1 연 20% 성장, 기술수출 8조→28조, ADC와 뉴모달리티. 2026년 바이오 투자 지점.", BIO)
+page("insights.html", "인사이트 — 지능이 흔해지면 값은 물리 세계로 · ARTUS", "네 개의 산업이 아니라 하나의 논지. AI가 내면을 맡을수록 값은 힘과 자리와 몸으로 옮겨 갑니다. 아르투스의 산업 인사이트.", HUB)
+page("insight-energy.html", "힘 — 생각 한 번에도 전기가 듭니다 · ARTUS Insight", "데이터센터 전력수요 460→1,000 TWh. 병목은 발전이 아니라 계통입니다. 전기가 산업 입지를 다시 그립니다.", ENERGY)
+page("insight-space.html", "자리 — 이동이 싸지면 도시의 모양이 바뀝니다 · ARTUS Insight", "우주 산업이 아니라 공간 그 자체. 자율주행과 교통축 변화가 도심 밀집과 오피스, 주변부 토지의 값을 바꿉니다.", SPACE)
+page("insight-ai.html", "지능 — 지능이 흔해지는 중입니다 · ARTUS Insight", "2026년 기업 앱의 40%가 AI 에이전트를 통합. 지능이 전기처럼 흔해지면 값은 그 바깥으로 옮겨 갑니다.", AI)
+page("insight-bio.html", "몸 — 지능이 흔해질수록 몸의 값이 오릅니다 · ARTUS Insight", "비만치료제 시장 연 48.4% 성장. 아픈 사람을 고치는 약이 아니라 건강한 사람이 몸을 관리하는 약입니다.", BIO)
 page("404.html", "페이지를 찾을 수 없습니다 — ARTUS", DESC, NOTFOUND)
 
 # sitemap / robots
 with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-    for fn, _ in NAV + FOOT_EXTRA + [("contact.html", ""), ("insight-energy.html", ""), ("insight-space.html", ""), ("insight-ai.html", ""), ("insight-bio.html", "")]:
+    for fn, _ in NAV + FOOT_EXTRA + [("contact.html", ""), ("insight-ai.html", ""), ("insight-energy.html", ""), ("insight-space.html", ""), ("insight-bio.html", "")]:
         loc = SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
         f.write(f"  <url><loc>{loc}</loc></url>\n")
     f.write("</urlset>\n")
