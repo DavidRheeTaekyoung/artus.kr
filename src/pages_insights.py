@@ -18,19 +18,19 @@ def article(slug, num, tag, title, lead, kpis, body, sources, prev, nxt):
     <div class="article">
       <div class="body rv">{body}
         <div class="sources"><h4>Sources</h4><ol>{s}</ol>
-        <p class="disclaimer">조사 시점 2026년 9월. 인용 수치는 각 출처의 원문을 따르며, 아르투스의 해석은 투자 권유가 아닙니다.</p></div>
+        <p class="disclaimer">2026년 9월 기준. 인용한 수치는 위 출처의 원문을 따릅니다. 이 글은 아르투스의 시각을 나누기 위한 것이며 특정 자산에 대한 투자 권유가 아닙니다.</p></div>
         <div class="next-prev"><a class="btn" href="{prev[0]}">← {prev[1]}</a><a class="btn" href="{nxt[0]}">{nxt[1]} →</a></div>
       </div>
       <aside class="aside rv d1">
         <div class="box"><div class="t">At a glance</div>{k}</div>
-        <div class="box"><div class="t">ARTUS view</div><p style="margin:0;font-size:.95rem;color:var(--mist-2)">{{view}}</p></div>
+        <div class="box"><div class="t">Our view</div><p style="margin:0;font-size:.95rem;color:var(--mist-2)">{{view}}</p></div>
       </aside>
     </div>
   </div>
 </section>
 """
 
-ENERGY_VIEW = "전력은 더 이상 유틸리티가 아니라 병목 자산입니다. 우리는 발전원보다 계통·저장·수요지 인접성에 프리미엄이 붙는 자산을 봅니다."
+ENERGY_VIEW = "전력은 이제 공공재가 아니라 희소 자산입니다. 우리는 발전원의 기술보다 계통, 저장, 수요지 인접성에 프리미엄이 붙는 자산에 주목합니다."
 ENERGY = article("insight-energy", "01", "Energy",
   "전기를 구하는 쪽이<br>협상력을 잃는 시대",
   "AI 데이터센터가 전력을 빨아들이면서, 에너지 투자의 질문은 \"무엇으로 발전하는가\"에서 \"어디에, 언제, 얼마나 확실하게 공급되는가\"로 옮겨 갔습니다.",
@@ -48,7 +48,7 @@ ENERGY = article("insight-energy", "01", "Energy",
    ("에너지안전신문 — SMR 및 첨단 원자로 2026", "https://www.esnews.kr/news/articleView.html?idxno=3704")],
   ("insights.html", "인사이트"), ("insight-space.html", "스페이스")).replace("{view}", ENERGY_VIEW)
 
-SPACE_VIEW = "발사체·위성의 기술 자립은 끝났고, 다음은 매출 자립입니다. 정부 펀드가 25배로 커지는 해에 민간 서비스 회사의 첫 계약이 어디서 나오는지를 봅니다."
+SPACE_VIEW = "발사체와 위성의 기술 자립은 이루어졌고, 다음 과제는 매출 자립입니다. 정부 펀드가 크게 확대되는 해에 민간 서비스 기업의 첫 상업 계약이 어디서 나오는지를 주시합니다."
 SPACE = article("insight-space", "02", "Space",
   "기술 자립에서<br>시장 자립으로",
   "2026년은 한국 우주산업이 \"만들 수 있는가\"에서 \"팔 수 있는가\"로 질문을 바꾼 해입니다. 정부 예산의 무게중심이 기술 확보에서 민간 생태계 조성으로 옮겨 갔습니다.",
@@ -67,7 +67,7 @@ SPACE = article("insight-space", "02", "Space",
    ("국회도서관 국가전략포털 — 데이터로 보는 우주항공산업", "https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000048129")],
   ("insight-energy.html", "에너지"), ("insight-ai.html", "인공지능")).replace("{view}", SPACE_VIEW)
 
-AI_VIEW = "우리는 AI를 투자 대상이기 전에 도구로 씁니다. 운용업을 스스로 AX한 경험이 있기에, 어떤 회사가 진짜로 바뀌고 어떤 회사가 도입 발표만 하는지 구분합니다."
+AI_VIEW = "우리는 AI를 투자 대상이기 전에 매일 쓰는 도구로 다룹니다. 운용업을 스스로 전환한 경험이 있기에, 실제로 달라진 회사와 도입을 발표한 회사를 구분할 수 있습니다."
 AI = article("insight-ai", "03", "Artificial Intelligence",
   "에이전트가 일하는 회사와<br>발표만 한 회사",
   "생성형 AI가 글을 써 주던 시기는 끝났습니다. 2026년의 분기점은 에이전트가 업무를 끝까지 수행하느냐이고, 그 차이는 생산성 숫자로 벌어지고 있습니다.",
@@ -85,7 +85,7 @@ AI = article("insight-ai", "03", "Artificial Intelligence",
    ("국회도서관 국가전략포털 — Artificial Intelligence Index Report 2026", "https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000062343")],
   ("insight-space.html", "스페이스"), ("insight-bio.html", "바이오")).replace("{view}", AI_VIEW)
 
-BIO_VIEW = "비만치료제는 신약이 아니라 인프라가 됐습니다. 우리는 그 파도의 2차 수혜인 CDMO, 경구 제형, 기술수출 구조에서 구조화 딜의 기회를 봅니다."
+BIO_VIEW = "비만치료제는 하나의 신약이 아니라 산업의 기반이 되었습니다. 우리는 그 흐름의 이차 수혜인 위탁생산, 경구 제형, 기술수출 구조에서 구조화 투자의 기회를 봅니다."
 BIO = article("insight-bio", "04", "Bio",
   "신약보다 먼저 움직이는 것",
   "2026년 바이오는 항암과 비만이라는 두 축 위에서 기술수출 규모가 세 배 넘게 뛰었습니다. 신약 자체보다 제형, 생산, 거래 구조가 먼저 값을 받는 해입니다.",
@@ -108,7 +108,7 @@ HUB = """
   <div class="wrap">
     <div class="crumb"><b>Insights</b> · Industry perspectives</div>
     <h1 class="h-xl rv">AI가 수요를 바꾸는<br>네 산업</h1>
-    <p class="lead rv d1">우리가 바꾸는 곳이 아니라 지켜보는 곳입니다. 에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽고, 확신이 서면 자본을 넣습니다. 수치는 출처가 있어야 씁니다.</p>
+    <p class="lead rv d1">에너지, 스페이스, 인공지능, 바이오. 아르투스가 지속적으로 연구하고 투자 기회를 찾는 네 산업입니다. 각 산업에서 무엇이 달라지고 있는지, 우리는 어디에서 기회를 보는지 정리했습니다.</p>
   </div>
 </section>
 <section class="section">

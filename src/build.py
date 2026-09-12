@@ -73,7 +73,7 @@ FOOT = """</main>
     <div>
       <div class="eyebrow">Contact</div>
       <h2 class="h-l">함께 성장할 파트너를 찾고 있다면</h2>
-      <p class="lead" style="margin-top:14px;max-width:52ch">투자 제안, 인수·매각, 자금 조달, 승계 설계까지. 어떤 단계든 편하게 연락 주십시오.</p>
+      <p class="lead" style="margin-top:14px;max-width:52ch">투자 제안, 인수와 매각, 자금 조달, 승계 설계, 그리고 AX. 어느 단계에 계시든 편하게 연락 주십시오.</p>
     </div>
     <a class="btn solid" href="contact.html">문의하기 <span class="arr">→</span></a>
   </div>
@@ -83,7 +83,7 @@ FOOT = """</main>
     <div class="cols">
       <div>
         <div class="brand"><span class="mark">ART<b>US</b></span></div>
-        <p class="blurb">Intelligence Meets Capital. 주식회사 아르투스는 AI로 사람을 사람의 일로 돌려보내고 그 변화에 자본을 더하는 프라이빗 에쿼티 파트너입니다. 책임·정직·신뢰·이해·전문성.</p>
+        <p class="blurb">Intelligence Meets Capital. 주식회사 아르투스는 AI로 기업의 일하는 방식을 바꾸고 그 변화에 자본을 더하는 프라이빗 에쿼티 파트너입니다.</p>
       </div>
       <div>
         <h4>Menu</h4>
@@ -137,7 +137,7 @@ INDEX = f"""
   <div class="wrap">
     <div class="eyebrow rv">Private Equity · AI Transformation · Seoul</div>
     <h1 class="h-xl rv d1 latin" style="font-size:clamp(2.6rem,6.2vw,5.4rem);letter-spacing:.01em">Intelligence<br>Meets Capital.</h1>
-    <p class="lead rv d2">지성과 자본이 만나는 곳. AI로 사람을 사람의 일로 돌려보내고, 그 변화에 자본을 더합니다. 우리 자신부터 그렇게 바꿨습니다.</p>
+    <p class="lead rv d2">지성과 자본이 만나는 곳. 아르투스는 AI로 기업의 일하는 방식을 바꾸고, 그 변화에 자본을 더하는 프라이빗 에쿼티 파트너입니다. 우리 자신부터 그렇게 바꿨습니다.</p>
     <div class="actions rv d3">
       <a class="btn solid" href="philosophy.html">투자 철학 <span class="arr">→</span></a>
       <a class="btn" href="ax.html">AX 컨설팅</a>
@@ -230,14 +230,14 @@ INDEX = f"""
         <div class="chapter">AX</div>
         <div class="eyebrow rv">05 — AI Transformation</div>
         <h2 class="h-l rv d1">일은 기계에게,<br>판단은 사람에게.</h2>
-        <p class="lead rv d2" style="margin-top:20px">우리 안에서 먼저 완성한 방식을 다른 회사 안에 세웁니다. 반복과 기다림은 기계가 맡고, 사람은 판단과 관계로 돌아갑니다.</p>
+        <p class="lead rv d2" style="margin-top:20px">우리 안에서 먼저 완성한 방식을 고객사 안에 세웁니다. 반복과 기다림은 기계가 맡고, 사람은 판단과 관계로 돌아갑니다.</p>
         <div class="rv d3" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px"><a class="btn solid" href="ax.html">AX 컨설팅 <span class="arr">→</span></a><a class="btn" href="decisionmaker.html">디시전메이커</a></div>
       </div>
       <div class="grid grid-2">
-        <div class="card rv"><div class="num">태버내클</div><h3>그림이 먼저, 검사를 못 넘으면 산출물이 아니다</h3><p>헌법 12조, 방 여덟, 사람이 들어오는 문 셋. 직원이 채팅방에서 이름을 부르면 30초 안에 개발이 시작되고, 새벽에는 감사 에이전트가 어제 만든 것을 사용자 관점으로 다시 써 봅니다.</p></div>
-        <div class="card rv d1"><div class="num">디시전메이커</div><h3>운용업 자체를 AX했다</h3><p>접수·분류·심사·로드맵·투심위·서명. 20년의 투자 기준을 실측 가능한 규범으로 옮기고, 결정의 자리 하나가 여러 딜을 놓치지 않게 만든 한 회사·한 화면.</p></div>
-        <div class="card rv d2"><div class="num">Engagements</div><h3>122개 지점 프랜차이즈 · 3개국 공장 · 미디어 딜룸</h3><p>세차 프랜차이즈 통합 플랫폼, 제조기업 생산 통합 관제, 텔레그램 릴레이 구축, 투자 유치 딜룸까지. 첫날의 산출물은 코드가 아니라 질문 목록입니다.</p></div>
-        <div class="card rv d3"><div class="num">Principle</div><h3>준비는 기계가, 판단과 도장은 사람이</h3><p>기계 산출은 제안·할 일·[결정 필요]로만 사람에게 갑니다. 밖으로 나가는 것은 사람이 승인하고, 원본과 실명은 사무실 PC를 떠나지 않습니다.</p></div>
+        <div class="card rv"><div class="num">태버내클</div><h3>회사가 스스로 진화하는 체계</h3><p>임직원이 늘 쓰는 채팅방에서 요청을 말하면 분 단위로 설계에 반영되고, 검증을 통과한 것만 운영에 오르며, 매일 사용자 관점의 점검이 이루어집니다. 기술 배경이 없어도 자기 업무의 도구를 직접 다듬게 됩니다.</p></div>
+        <div class="card rv d1"><div class="num">디시전메이커</div><h3>운용업을 먼저 바꿨습니다</h3><p>접수, 분류, 심사, 실행 계획, 투자심의, 서명. 20년의 투자 기준을 실행 가능한 규범으로 옮겨, 여러 건의 딜을 동시에 준비하면서도 어느 하나 놓치지 않는 체계를 우리 안에 세웠습니다.</p></div>
+        <div class="card rv d2"><div class="num">Engagements</div><h3>프랜차이즈, 제조, 미디어, 자산 실사</h3><p>전국 100여 개 지점 프랜차이즈의 통합 플랫폼, 3개국 생산 거점 통합 관제, 임직원 요청 즉시 반영 체계, 투자 유치 자료 일체까지. 첫날의 산출물은 코드가 아니라 질문 목록입니다.</p></div>
+        <div class="card rv d3"><div class="num">Principle</div><h3>준비는 기계가, 판단과 서명은 사람이</h3><p>시스템이 만든 것은 제안과 할 일로만 사람에게 전달됩니다. 밖으로 나가는 것은 사람이 승인하고, 원본 자료와 실명 정보는 고객사의 시스템을 떠나지 않습니다.</p></div>
       </div>
     </div>
   </div>
@@ -246,8 +246,8 @@ INDEX = f"""
 <section class="section on-ivory">
   <div class="wrap">
     <div class="split" style="align-items:end;margin-bottom:40px">
-      <div><div class="eyebrow rv">06 — Insights</div><h2 class="h-l rv d1">우리가 보는 네 개의 산업</h2></div>
-      <p class="lead rv d2">에너지, 스페이스, 인공지능, 바이오. 2026년의 숫자를 출처와 함께 읽습니다.</p>
+      <div><div class="eyebrow rv">06 — Insights</div><h2 class="h-l rv d1">AI가 수요를 바꾸는 네 산업</h2></div>
+      <p class="lead rv d2">에너지, 스페이스, 인공지능, 바이오. 우리가 지속적으로 연구하고 투자 기회를 찾는 산업입니다.</p>
     </div>
     <div class="insight-grid">
       <a class="icard rv" href="insight-energy.html"><div class="num">01</div><div class="t">Energy</div><h3>전기를 구하는 쪽이 협상력을 잃는 시대</h3><p>데이터센터 전력수요 460→1,000 TWh. 발전원보다 계통·저장·수요지 인접성이 프리미엄을 받는다.</p><span class="more">읽기 →</span></a>
