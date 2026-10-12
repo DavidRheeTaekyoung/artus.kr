@@ -172,12 +172,13 @@ p{margin:0 0 1.1em}
 .person p{color:var(--mist);font-size:1rem;max-width:72ch}
 .person p+p{margin-top:.8em}
 @media(max-width:640px){.person{grid-template-columns:1fr;gap:16px}.mono{width:72px;height:72px;font-size:1.25rem}}
-.team-teaser{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.team-teaser{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
 .tcard{padding:28px 26px;border:1px solid var(--line);border-radius:4px;transition:border-color .3s,transform .3s var(--ease)}
 .tcard:hover{border-color:rgba(180,151,90,.6);transform:translateY(-3px)}
 .tcard .mono{width:56px;height:56px;font-size:1rem;margin-bottom:18px}
 .tcard h3{font-size:1.2rem}
 .tcard .role{color:var(--gold);font-size:.86rem;margin-top:6px}
+@media(max-width:1100px){.team-teaser{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:900px){.team-teaser{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.team-teaser{grid-template-columns:1fr}}
 
