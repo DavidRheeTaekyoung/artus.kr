@@ -261,7 +261,7 @@ INDEX = f"""
 <section class="section">
   <div class="wrap">
     <div class="split" style="align-items:end;margin-bottom:40px">
-      <div><div class="eyebrow rv">07 — People</div><h2 class="h-l rv d1">투자은행, 프라이빗 뱅킹,<br>리서치, 법률, 부동산이 한 테이블에</h2></div>
+      <div><div class="eyebrow rv">07 — People</div><h2 class="h-l rv d1">투자은행과 프라이빗 뱅킹, 리서치와 법률,<br>부동산과 자금이 한 테이블에</h2></div>
       <p class="lead rv d2">국내외 금융권에서 20년 이상 쌓은 경력이 투자심의위원회에 모입니다.</p>
     </div>
     <div class="team-teaser">
@@ -269,7 +269,8 @@ INDEX = f"""
       <a class="tcard rv d1" href="team.html#han"><div class="mono">HH</div><h3>한현철</h3><div class="role">대표이사 · 파트너 · 투자심의위원</div></a>
       <a class="tcard rv d2" href="team.html#lee"><div class="mono">TL</div><h3>이태경</h3><div class="role">대표이사 · 파트너 · 투자심의위원</div></a>
       <a class="tcard rv d3" href="team.html#jung"><div class="mono">SJ</div><h3>정상훈</h3><div class="role">글로벌대표 · 파트너</div></a>
-      <a class="tcard rv d3" href="team.html#kim"><div class="mono">SK</div><h3>김수한</h3><div class="role">부동산사업본부 대표 · 파트너</div></a>
+      <a class="tcard rv d4" href="team.html#kim"><div class="mono">SK</div><h3>김수한</h3><div class="role">부동산사업본부 대표 · 파트너</div></a>
+      <a class="tcard rv d5" href="team.html#kimsh"><div class="mono">SK</div><h3>김승현</h3><div class="role">부사장 · 부동산금융부문 대표</div></a>
     </div>
   </div>
 </section>
@@ -464,7 +465,7 @@ TEAM = """
   <div class="wrap">
     <div class="crumb"><b>05</b> · People</div>
     <h1 class="h-xl rv">구성원</h1>
-    <p class="lead rv d1">투자은행, 프라이빗 뱅킹, 리서치, 법률, 부동산. 서로 다른 자리에서 경력을 쌓아 온 다섯 사람이 아르투스에 모입니다.</p>
+    <p class="lead rv d1">투자은행, 프라이빗 뱅킹, 리서치, 법률, 부동산, 그리고 은행의 자금. 서로 다른 자리에서 경력을 쌓아 온 여섯 사람이 아르투스에 모입니다.</p>
   </div>
 </section>
 <section class="section">
@@ -483,7 +484,11 @@ TEAM = """
   "정상훈 대표는 변호사로 한국과 중국 변호사 자격을 모두 보유하고 있습니다. 현재 법무법인 율촌의 중국대표를 겸임하고 있습니다. 한샘의 중국 대표를 역임했습니다. 중국 로펌인 링크와 킹앤우드에서 근무했습니다. 미래에셋캐피탈 투자본부와 국내 로펌인 법무법인 서정에서 근무했습니다. 서울대학교 법대를 졸업하였습니다."]) \
 + person("kim", "SK", "김수한", "부동산사업본부 대표 · 파트너", [
   "김수한 대표는 부동산 개발과 부동산 금융 전문가입니다. 경희대학교 국제학부를 졸업하고 이지스자산운용, ARA 코리아, 마스턴투자운용을 거치며 국내 대표 부동산 운용사에서 개발·투자·금융 실무를 쌓았습니다.",
-  "현재 클로버파트너스 대표이사를 맡고 있으며, 아르투스에서는 부동산사업본부 대표로서 부동산 개발 사업과 부동산 금융 전반을 총괄합니다."]) + """  </div>
+  "현재 클로버파트너스 대표이사를 맡고 있으며, 아르투스에서는 부동산사업본부 대표로서 부동산 개발 사업과 부동산 금융 전반을 총괄합니다."]) \
++ person("kimsh", "SK", "김승현", "부사장 · 부동산금융부문 대표", [
+  "김승현 부사장은 은행의 자금과 시스템, 그리고 법률을 모두 안쪽에서 다뤄 본 금융인입니다. 성균관대학교 법학과를 졸업한 뒤 1996년 신한은행에 입행해 2015년까지 20년을 보냈습니다. 전산부에서 은행 기간계 시스템의 개발과 운영을 맡았고, 자금부에서는 자금기획과 자금관리를 담당하며 은행의 조달과 유동성을 직접 다뤘습니다. 이후 인사부에서 조직 운영을 맡았습니다.",
+  "2015년부터는 ㈜법무보헌 부대표로 11년간 기업의 경영 컨설팅을 수행하며, 지배구조와 자금 구조를 바깥에서 다시 들여다보는 경험을 쌓았습니다. 2026년에는 법무법인 이유의 IB 사업본부를 전무로 맡았습니다.",
+  "부동산금융은 자금 조달과 법률 구조, 그리고 둘을 실제로 굴리는 실행 체계가 함께 맞물려야 비로소 성립합니다. 김 부사장은 그 셋을 모두 현장에서 다뤄 온 드문 이력을 지녔으며, 아르투스의 부동산금융부문을 맡아 사업의 자금 조달과 자본 구조 설계를 총괄합니다."]) + """  </div>
 </section>
 """
 
@@ -528,7 +533,7 @@ page("philosophy.html", "투자 철학 — 사람을 사람의 일로 돌려보�
 page("values.html", "핵심 가치 — ARTUS", "Accountability, Righteousness, Trust, Understanding, Specialty. 원래의 뜻 위에 AI 시대의 뜻을 한 겹 더 입힌 다섯 가지 핵심 가치.", VALUES_INTRO)
 page("services.html", "업무 분야 — ARTUS", "기업인수합병(M&A), 지분투자, 신디케이션, 상속·증여 설계. 아르투스의 네 가지 업무 분야와 수행 절차.", SERVICES)
 page("achievements.html", "주요 성과 — ARTUS", "만나코퍼레이션 IRR 59%, 에이치앤비아시아 IRR 39% 등 스트라이커 PEF의 투자 성과와 위험관리 사례.", ACHIEVEMENTS)
-page("team.html", "구성원 — ARTUS", "소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표, 김수한 부동산사업본부 대표. 투자은행·프라이빗 뱅킹·리서치·법률·부동산 전문가로 구성된 아르투스의 파트너.", TEAM)
+page("team.html", "구성원 — ARTUS", "소병운 부회장, 한현철 대표, 이태경 대표, 정상훈 글로벌대표, 김수한 부동산사업본부 대표, 김승현 부사장. 투자은행·프라이빗 뱅킹·리서치·법률·부동산·기업금융 전문가로 구성된 아르투스의 구성원.", TEAM)
 page("contact.html", "문의하기 — ARTUS", "ARTUS 연락처. 서울 영등포구 국제금융로8길 27-9 동북빌딩 10층, 02-761-2025, contact@artus.kr", CONTACT)
 page("ax.html", "AX — 일은 기계에게, 판단은 사람에게 · ARTUS", "일은 기계에게, 판단은 사람에게. 회사의 시스템을 회사 사람이 자기 말로 만들고 고치는 체계, 태버내클. 프랜차이즈 통합 플랫폼, 3개국 생산 거점 통합 관제, 임직원 요청 즉시 반영 체계 등 실제 프로젝트.", AX)
 page("decisionmaker.html", "디시전메이커 — 운용업을 먼저 바꿨습니다 · ARTUS", "투자 의사결정의 준비를 완성하는 기계. 접수·분류·심사·로드맵·투심위·서명을 한 회사·한 화면으로. 판단과 도장은 사람이 합니다.", DECISIONMAKER)
